@@ -1,0 +1,22 @@
+{
+  "songs": [
+    {
+      "youtube_id": "lWA2pjMjpBs",
+      "language": "english",
+      "artist": "rihanna",
+      "name": "diamonds"
+    },
+    {
+      "youtube_id": "_JZom_gVfuw",
+      "language": "english",
+      "artist": "notorious-big",
+      "name": "juicy"
+    },
+    {
+      "youtube_id": "y8rBC6GCUjg",
+      "language": "spanish",
+      "artist": "julieta-venegas",
+      "name": "me-voy"
+    }
+  ]
+}

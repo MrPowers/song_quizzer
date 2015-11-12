@@ -6,7 +6,6 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
 var routes = require('./routes/index');
-var users = require('./routes/users');
 
 var app = express();
 
@@ -23,7 +22,26 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', routes);
-app.use('/users', users);
+
+var appdata = require("./data.json")
+
+app.get('/:language-songs', function(request, response) {
+  var language = request.params.language;
+  var songs = appdata.songs.filter(s => s.language === language);
+  response.render('language_songs', {
+    language: language,
+    songs: songs
+  });
+})
+
+app.get('/:language-songs/:artist/:song', function(request, response) {
+  var language = request.params.language;
+  var song = appdata.songs.find(s => s.name === request.params.song);
+  response.render('song_quiz', {
+    language: language,
+    song: song
+  });
+})
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

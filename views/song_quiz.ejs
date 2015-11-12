@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Song Quizzer</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1>Song Quiz</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/<%= song.youtube_id %>" frameborder="0" allowfullscreen></iframe>
+    <%- include('song_quizzes/' + song.name + '.ejs') %>
+  </body>
+</html>
+

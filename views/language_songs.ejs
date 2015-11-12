@@ -5,11 +5,12 @@
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <body>
-    <h1>Song Quizzer</h1>
-    <p>Welcome to Song Quizzer</p>
+    <h1><%= language %> Songs</h1>
     <ul>
-      <li><a href="/english">English</a></li>
-      <li><a href="/spanish">Spanish</a></li>
+      <% songs.forEach(function(song) { %>
+        <li><%= song.artist %> - <%= song.name %> <%= song.youtube_id %></li>
+      <% }); %>
     </ul>
   </body>
 </html>
+
