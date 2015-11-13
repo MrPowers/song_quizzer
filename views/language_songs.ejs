@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Song Quizzer</title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <% include partials/head %>
   </head>
   <body>
     <h1><%= language %> Songs</h1>
     <ul>
       <% songs.forEach(function(song) { %>
-        <li><%= song.artist %> - <%= song.name %> <%= song.youtube_id %></li>
+        <a href="/<%= language %>-songs/<%= song.artist %>/<%= song.name %>">
+          <img src="/images/<%= song.image %>" alt="<%= song.artist %> <%= song.name %>" />
+        </a>
       <% }); %>
     </ul>
   </body>

@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Song Quizzer</title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <% include partials/head %>
+    <link rel='stylesheet' href='/stylesheets/<%= song.name %>.css' />
+    <script type="text/javascript" src="/javascripts/song_quiz.js"></script>
   </head>
   <body>
     <h1>Song Quiz</h1>
