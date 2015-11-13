@@ -20,6 +20,41 @@
       "artist": "julieta-venegas",
       "name": "me-voy",
       "image": "julieta-venegas-me-voy.jpg"
+    },
+    {
+      "youtube_id": "PIh2xe4jnpk",
+      "language": "english",
+      "artist": "magic",
+      "name": "rude",
+      "image": "magic-rude.png"
+    },
+    {
+      "youtube_id": "10IKRNNfCGU",
+      "language": "english",
+      "artist": "justin-beiber",
+      "name": "sorry",
+      "image": "justin-beiber-sorry.jpg"
+    },
+    {
+      "youtube_id": "7zp1TbLFPp8",
+      "language": "spanish",
+      "artist": "don-omar",
+      "name": "danza-kuduro",
+      "image": "don-omar-danza-kuduro.JPG"
+    },
+    {
+      "youtube_id": "zZjSX01P5dE",
+      "language": "spanish",
+      "artist": "j-balvin",
+      "name": "ginza",
+      "image": "j-balvin-ginza.jpg"
+    },
+    {
+      "youtube_id": "uU_FFtbCcLc",
+      "language": "spanish",
+      "artist": "nicky-jam",
+      "name": "el-perdon",
+      "image": "nicky-jam-el-perdon.png"
     }
   ]
 }

@@ -21,9 +21,16 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/', routes);
-
 var appdata = require("./data.json")
+
+app.get('/', function(request, response) {
+  var spanishSongs = appdata.songs.filter(s => s.language === "spanish");
+  var englishSongs = appdata.songs.filter(s => s.language === "english");
+  response.render('index', {
+    spanishSongs: spanishSongs,
+    englishSongs: englishSongs
+  });
+})
 
 app.get('/:language-songs', function(request, response) {
   var language = request.params.language;
