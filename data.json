@@ -5,56 +5,64 @@
       "language": "english",
       "artist": "rihanna",
       "name": "diamonds",
-      "image": "rihanna-diamonds.jpeg"
+      "image": "rihanna-diamonds.jpeg",
+      "css": "checkers"
     },
     {
       "youtube_id": "_JZom_gVfuw",
       "language": "english",
       "artist": "notorious-big",
       "name": "juicy",
-      "image": "notorious-big-juicy.jpg"
+      "image": "notorious-big-juicy.jpg",
+      "css": "light-blue"
     },
     {
       "youtube_id": "y8rBC6GCUjg",
       "language": "spanish",
       "artist": "julieta-venegas",
       "name": "me-voy",
-      "image": "julieta-venegas-me-voy.jpg"
+      "image": "julieta-venegas-me-voy.jpg",
+      "css": "light-blue"
     },
     {
       "youtube_id": "PIh2xe4jnpk",
       "language": "english",
       "artist": "magic",
       "name": "rude",
-      "image": "magic-rude.png"
+      "image": "magic-rude.png",
+      "css": "light-blue"
     },
     {
       "youtube_id": "10IKRNNfCGU",
       "language": "english",
       "artist": "justin-beiber",
       "name": "sorry",
-      "image": "justin-beiber-sorry.jpg"
+      "image": "justin-beiber-sorry.jpg",
+      "css": "light-blue"
     },
     {
       "youtube_id": "7zp1TbLFPp8",
       "language": "spanish",
       "artist": "don-omar",
       "name": "danza-kuduro",
-      "image": "don-omar-danza-kuduro.JPG"
+      "image": "don-omar-danza-kuduro.JPG",
+      "css": "light-blue"
     },
     {
       "youtube_id": "zZjSX01P5dE",
       "language": "spanish",
       "artist": "j-balvin",
       "name": "ginza",
-      "image": "j-balvin-ginza.jpg"
+      "image": "j-balvin-ginza.jpg",
+      "css": "light-blue"
     },
     {
       "youtube_id": "uU_FFtbCcLc",
       "language": "spanish",
       "artist": "nicky-jam",
       "name": "el-perdon",
-      "image": "nicky-jam-el-perdon.png"
+      "image": "nicky-jam-el-perdon.png",
+      "css": "light-blue"
     }
   ]
 }
