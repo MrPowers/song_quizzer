@@ -32,20 +32,9 @@ app.get('/', function(request, response) {
   });
 })
 
-app.get('/:language-songs', function(request, response) {
-  var language = request.params.language;
-  var songs = appdata.songs.filter(s => s.language === language);
-  response.render('language_songs', {
-    language: language,
-    songs: songs
-  });
-})
-
-app.get('/:language-songs/:artist/:song', function(request, response) {
-  var language = request.params.language;
+app.get('/:artist/:song', function(request, response) {
   var song = appdata.songs.find(s => s.name === request.params.song);
   response.render('song_quiz', {
-    language: language,
     song: song
   });
 })
