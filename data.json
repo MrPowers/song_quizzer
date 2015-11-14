@@ -63,6 +63,22 @@
       "name": "el-perdon",
       "image": "nicky-jam-el-perdon.png",
       "css": "light-blue"
+    },
+    {
+      "youtube_id": "ZBMsSPR9QMg",
+      "language": "spanish",
+      "artist": "farruko",
+      "name": "sunset",
+      "image": "farruko-sunset.jpeg",
+      "css": "light-blue"
+    },
+    {
+      "youtube_id": "YQHsXMglC9A",
+      "language": "english",
+      "artist": "adele",
+      "name": "hello",
+      "image": "adele-hello.jpg",
+      "css": "light-blue"
     }
   ]
 }

@@ -22,13 +22,24 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 var appdata = require("./data.json")
+var _ = require("lodash")
 
 app.get('/', function(request, response) {
   var spanishSongs = appdata.songs.filter(s => s.language === "spanish");
   var englishSongs = appdata.songs.filter(s => s.language === "english");
   response.render('index', {
-    spanishSongs: spanishSongs,
-    englishSongs: englishSongs
+    songData: [
+      {
+        name: "Spanish Songs",
+        all: _.chunk(spanishSongs, 4),
+        id: "spanish-songs"
+      },
+      {
+        name: "English Songs",
+        all: _.chunk(englishSongs, 4),
+        id: "english-songs"
+      }
+    ]
   });
 })
 
