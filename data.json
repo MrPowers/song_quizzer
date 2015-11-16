@@ -1,6 +1,14 @@
 {
   "songs": [
     {
+      "youtube_id": "QFs3PIZb3js",
+      "language": "spanish",
+      "artist": "romeo-santos",
+      "name": "propuesta-indecente",
+      "image": "romeo-santos-propuesta-indecente.jpg",
+      "css": "light-blue"
+    },
+    {
       "youtube_id": "lWA2pjMjpBs",
       "language": "english",
       "artist": "rihanna",
