@@ -79,6 +79,14 @@
       "name": "hello",
       "image": "adele-hello.jpg",
       "css": "light-blue"
+    },
+    {
+      "youtube_id": "CevxZvSJLk8",
+      "language": "english",
+      "artist": "katy-perry",
+      "name": "roar",
+      "image": "katy-perry-roar.jpg",
+      "css": "light-blue"
     }
   ]
 }
