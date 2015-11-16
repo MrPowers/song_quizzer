@@ -19,17 +19,22 @@ $(document).ready(function() {
   }
 
   function markCorrectness($input) {
-    var s = $input.next("span");
+    var s = $input.next(".answer-correctness");
     if ($input.hasClass("correct")) {
-      s.replaceWith("<span class='correct fa-stack fa-1x'><i class='fa fa-check-circle fa-2x'></i></span>")
+      var correctCheck = "<span class='correct fa-stack fa-1x'><i class='fa fa-check-circle fa-2x'></i></span>";
+      s.html(correctCheck)
     } else if ($input.hasClass("incorrect")) {
-      s.replaceWith("<span class='incorrect fa-stack fa-1x'><i class='fa fa-times-circle fa-2x'></i></span>")
+      var correctAnswer = $input.data("answer");
+      var incorrectCross = "<span class='incorrect fa-stack fa-1x'><i class='fa fa-times-circle fa-2x'></i></span>"
+      var help = "<span data-toggle='tooltip' data-placement='top' data-original-title=" + correctAnswer + " class='fa-stack fa-1x'><i class='fa fa-question-circle fa-2x'></i></span>"
+      s.html(incorrectCross + help)
+      $('[data-toggle="tooltip"]').tooltip();
     }
   }
 
   $.each($("input"), function( index, value ) {
     // add spans after all the input boxes for the markCorrectness() function
-    $("<span></span>").insertAfter($(value))
+    $("<span class='answer-correctness'></span>").insertAfter($(value))
     checkCorrectness($(value));
   });
 
