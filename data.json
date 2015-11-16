@@ -22,7 +22,7 @@
       "artist": "notorious-big",
       "name": "juicy",
       "image": "notorious-big-juicy.jpg",
-      "css": "night"
+      "css": "light-blue"
     },
     {
       "youtube_id": "y8rBC6GCUjg",
@@ -54,7 +54,7 @@
       "artist": "don-omar",
       "name": "danza-kuduro",
       "image": "don-omar-danza-kuduro.JPG",
-      "css": "night"
+      "css": "light-blue"
     },
     {
       "youtube_id": "zZjSX01P5dE",
@@ -102,6 +102,14 @@
       "artist": "taylor-swift",
       "name": "shake-it-off",
       "image": "taylor-swift-shake-it-off.jpg",
+      "css": "light-blue"
+    },
+    {
+      "youtube_id": "a8Rwz6zBJSE",
+      "language": "spanish",
+      "artist": "shakira",
+      "name": "suerte",
+      "image": "shakira-suerte.jpg",
       "css": "light-blue"
     }
   ]
