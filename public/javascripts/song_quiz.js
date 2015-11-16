@@ -4,7 +4,7 @@ $(document).ready(function() {
     input.focus(function() {
       // can add stuff here
     }).blur(function() {
-        var userAnswer = $(this).val();
+        var userAnswer = $(this).val().toLowerCase();
         var correctAnswer = $(this).data("answer");
         if (userAnswer === "") return;
         if (userAnswer === correctAnswer) {
