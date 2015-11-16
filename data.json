@@ -95,6 +95,14 @@
       "name": "roar",
       "image": "katy-perry-roar.jpg",
       "css": "light-blue"
+    },
+    {
+      "youtube_id": "nfWlot6h_JM",
+      "language": "english",
+      "artist": "taylor-swift",
+      "name": "shake-it-off",
+      "image": "taylor-swift-shake-it-off.jpg",
+      "css": "light-blue"
     }
   ]
 }
