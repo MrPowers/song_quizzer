@@ -26,7 +26,6 @@ $(document).ready(function() {
     } else if ($input.hasClass("incorrect")) {
       var correctAnswer = $input.data("answer");
       var incorrectCross = "<span class='incorrect fa-stack fa-1x'><i class='fa fa-times-circle fa-2x'></i></span>"
-      //There's some issue with the help variable's use of correctAnswer. If the correct answer has one or more spaces, the tooltip only displays the text before the first space. For example, in the song Sunset, "se escondió" displays as "se."
       var help = "<span data-toggle='tooltip' data-placement='top' data-original-title='" + correctAnswer + "' class='fa-stack fa-1x'><i class='fa fa-question-circle fa-2x'></i></span>"
       s.html(incorrectCross + help)
       $('[data-toggle="tooltip"]').tooltip();
