@@ -44,10 +44,8 @@ app.get('/', function(request, response) {
 })
 
 app.get('/:artist/:song', function(request, response) {
-  var song = appdata.songs.find(s => s.name === request.params.song);
-  response.render('song_quiz', {
-    song: song
-  });
+  var foundSong = appdata.songs.find(s => s.name === request.params.song);
+  response.render('song_quiz', { song: foundSong } );
 })
 
 // catch 404 and forward to error handler
