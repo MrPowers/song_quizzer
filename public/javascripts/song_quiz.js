@@ -1,24 +1,32 @@
 $(document).ready(function() {
 
-  function checkCorrectness(input) {
-    input.focus(function() {
+  function checkCorrectness($input) {
+    $input.focus(function() {
       // can add stuff here
     }).blur(function() {
-        var userAnswer = $(this).val().toLowerCase();
-        var correctAnswer = $(this).data("answer");
-        if (userAnswer === "") return;
-        if (userAnswer === correctAnswer) {
-          $(this).addClass("correct");
-          $(this).removeClass("incorrect");
-        } else {
-          $(this).addClass("incorrect");
-          $(this).removeClass("correct");
-        }
-        markCorrectness(input);
+      markCorrectness($input);
     });
   }
 
   function markCorrectness($input) {
+    addCorrectnessClass($input);
+    showCorrectness($input);
+  }
+
+  function addCorrectnessClass($input) {
+    var userAnswer = $input.val().toLowerCase();
+    var correctAnswer = $input.data("answer");
+    if (userAnswer === "") return;
+    if (userAnswer === correctAnswer) {
+      $input.addClass("correct");
+      $input.removeClass("incorrect");
+    } else {
+      $input.addClass("incorrect");
+      $input.removeClass("correct");
+    }
+  }
+
+  function showCorrectness($input) {
     var s = $input.next(".answer-correctness");
     if ($input.hasClass("correct")) {
       var correctCheck = "<span class='correct fa-stack fa-1x'><i class='fa fa-check-circle fa-2x'></i></span>";
@@ -32,10 +40,20 @@ $(document).ready(function() {
     }
   }
 
+  function addEnterListener($input) {
+    $input.on('keypress', function (event) {
+      if(event.which === 13){
+        markCorrectness($input);
+      }
+    });
+  }
+
   $.each($("input"), function( index, value ) {
+    var $value = $(value);
     // add spans after all the input boxes for the markCorrectness() function
-    $("<span class='answer-correctness'></span>").insertAfter($(value))
-    checkCorrectness($(value));
+    $("<span class='answer-correctness'></span>").insertAfter($value)
+    checkCorrectness($value);
+    addEnterListener($value);
   });
 
 });
