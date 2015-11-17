@@ -1,5 +1,7 @@
 $(document).ready(function() {
 
+  // code for the input boxes for lyric answers
+
   function checkCorrectness($input) {
     $input.focus(function() {
       // can add stuff here

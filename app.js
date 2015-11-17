@@ -32,12 +32,14 @@ app.get('/', function(request, response) {
       {
         name: "Spanish Songs",
         all: _.chunk(spanishSongs, 4),
-        id: "spanish-songs"
+        id: "spanish-songs",
+        language: "spanish"
       },
       {
         name: "English Songs",
         all: _.chunk(englishSongs, 4),
-        id: "english-songs"
+        id: "english-songs",
+        language: "english"
       }
     ]
   });

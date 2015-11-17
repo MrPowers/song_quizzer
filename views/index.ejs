@@ -2,13 +2,14 @@
 <html>
   <head>
     <% include partials/head %>
+    <script type="text/javascript" src="/javascripts/filter.js"></script>
   </head>
   <body>
     <% include partials/navbar %>
 
 <div class="container">
     <% songData.forEach(function(s) { %>
-      <div class="col-md-12">
+      <div class="col-md-12 song-category <%= s.language %>">
 
           <div class="well">
               <div id="<%= s.id %>" class="carousel slide" data-interval="false">
