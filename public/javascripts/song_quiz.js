@@ -13,6 +13,12 @@ $(document).ready(function() {
   function markCorrectness($input) {
     addCorrectnessClass($input);
     showCorrectness($input);
+    grade();
+  }
+
+  function grade() {
+    var numCorrect = $("input.correct").length;
+    $('.score').html(numCorrect);
   }
 
   function addCorrectnessClass($input) {
@@ -49,6 +55,7 @@ $(document).ready(function() {
       }
     });
   }
+
 
   $.each($("input"), function( index, value ) {
     var $value = $(value);
