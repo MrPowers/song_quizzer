@@ -3,7 +3,6 @@ body{
 -moz-box-sizing: content-box;
 box-sizing: content-box;
 border: none;
-font: normal 1px/normal Arial, Helvetica, sans-serif;
 color: rgba(255,255,255,1);
 -o-text-overflow: clip;
 text-overflow: clip;
