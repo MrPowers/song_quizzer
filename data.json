@@ -135,6 +135,46 @@
       "name": "call-me-maybe",
       "image": "carly-rae-jepsen-call-me-maybe.png",
       "css": "light-blue"
+    },
+    {
+      "youtube_id": "I9cCPQVPv8o",
+      "language": "spanish",
+      "artist": "ricardo-arjona",
+      "name": "fuiste-tu",
+      "image": "ricardo-arjona-fuiste-tu.jpg",
+      "css": "light-blue"
+    },
+    {
+      "youtube_id": "AdBM6N2Zbv4",
+      "language": "spanish",
+      "artist": "gaby-moreno",
+      "name": "quizas-quizas-quizas",
+      "image": "gaby-moreno-quizas-quizas-quizas.jpg",
+      "css": "light-blue"
+    },
+    {
+      "youtube_id": "hLQl3WQQoQ0",
+      "language": "english",
+      "artist": "adele",
+      "name": "someone-like-you",
+      "image": "adele-someone-like-you.jpg",
+      "css": "light-blue"
+    },
+    {
+      "youtube_id": "8UVNT4wvIGY",
+      "language": "english",
+      "artist": "gotye",
+      "name": "somebody-that-i-used-to-know",
+      "image": "gotye-somebody-that-i-used-to-know.jpg",
+      "css": "light-blue"
+    },
+    {
+      "youtube_id": "yyDUC1LUXSU",
+      "language": "english",
+      "artist": "robin-thicke",
+      "name": "blurred-lines",
+      "image": "robin-thicke-blurred-lines.jpg",
+      "css": "light-blue"
     }
   ]
 }
