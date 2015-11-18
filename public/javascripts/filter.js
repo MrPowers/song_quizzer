@@ -16,6 +16,17 @@ $(document).ready(function() {
     })
   }
 
+  function showEverything() {
+    $('.show-everything').click(function () {
+      $('.song-category').each(function(index, category) {
+        var $c = $(category);
+        $c.removeClass("hide");
+      });
+    })
+  }
+
+  showEverything();
+
   $('.language-selector').each(function () {
     addFilterListener($(this));
   });
