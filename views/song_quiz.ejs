@@ -9,10 +9,14 @@
     <% include partials/navbar %>
     <div class="container">
       <br />
-      <iframe class="col-md-6 col-md-offset-3" width="560" height="315" src="https://www.youtube.com/embed/<%= song.youtube_id %>" frameborder="0" allowfullscreen></iframe>
-      <div class="col-md-6 col-md-offset-3 text-center">
-        <%- include('song_quizzes/' + song.name + '.ejs') %>
-      </p>
+      <h1 class="title text-center"><%= song.name.toUpperCase() %></h1>
+      <div class="col-md-12 text-center">
+        <iframe class="video" width="784" height="441" src="https://www.youtube.com/embed/<%= song.youtube_id %>" frameborder="0"></iframe>
+      </div>
+        <h1 class="text-center">Your Score: <span class="score"></span></h1>
+        <div class="col-md-12 text-center">
+          <%- include('song_quizzes/' + song.name + '.ejs') %>
+        </div>
     </div>
   </body>
 </html>
