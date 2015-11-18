@@ -19,3 +19,11 @@ p {
 	font-weight: bolder;
 	font-size: 15px;
 }
+
+#left-arrow{
+  margin-top: 25px;
+}
+
+#left-arrow:hover{
+  color: #63656E;
+}
