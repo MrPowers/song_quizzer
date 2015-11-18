@@ -111,6 +111,14 @@
       "name": "suerte",
       "image": "shakira-suerte.jpg",
       "css": "light-blue"
+    },
+    {
+      "youtube_id": "pRpeEdMmmQ0",
+      "language": "english",
+      "artist": "shakira",
+      "name": "waka-waka",
+      "image": "shakira-waka-waka.jpeg",
+      "css": "light-blue"
     }
   ]
 }
