@@ -119,6 +119,14 @@
       "name": "waka-waka",
       "image": "shakira-waka-waka.jpeg",
       "css": "light-blue"
+    },
+    {
+      "youtube_id": "fWNaR-rxAic",
+      "language": "english",
+      "artist": "carly-rae-jepsen",
+      "name": "call-me-maybe",
+      "image": "carly-rae-jepsen-call-me-maybe.png",
+      "css": "light-blue"
     }
   ]
 }
