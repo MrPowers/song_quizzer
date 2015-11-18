@@ -86,7 +86,7 @@
       "artist": "adele",
       "name": "hello",
       "image": "adele-hello.jpg",
-      "css": "light-blue"
+      "css": "pink"
     },
     {
       "youtube_id": "CevxZvSJLk8",
@@ -119,6 +119,14 @@
       "name": "waka-waka",
       "image": "shakira-waka-waka.jpeg",
       "css": "light-blue"
+    },
+    {
+      "youtube_id": "kffacxfA7G4",
+      "language": "english",
+      "artist": "justin-beiber",
+      "name": "baby",
+      "image": "justin-bieber-baby.jpg",
+      "css": "checkers"
     }
   ]
 }
