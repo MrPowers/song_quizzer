@@ -5,6 +5,7 @@ body {
 p {
    font-size: 16px;
    line-height: 1.7;
+   padding-top: 30px;
 }
 
 .correct {
@@ -18,4 +19,3 @@ p {
 	font-weight: bolder;
 	font-size: 15px;
 }
-
