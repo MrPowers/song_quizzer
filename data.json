@@ -198,7 +198,7 @@
       "artist": "enrique-iglesias",
       "name": "bailando",
       "image": "enrique-iglesias-bailando.jpg",
-      "css": "light-blue"
+      "css": "orange"
     },
     {
       "youtube_id": "wTZ7A-h8yTs",
@@ -206,7 +206,7 @@
       "artist": "shakira",
       "name": "tu",
       "image": "shakira-tu.jpg",
-      "css": "light-blue"
+      "css": "night"
     }
   ]
 }
