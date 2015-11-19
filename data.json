@@ -191,6 +191,22 @@
       "name": "mi-verdad",
       "image": "mana-mi-verdad.jpg",
       "css": "orange"
+    },
+    {
+      "youtube_id": "NUsoVlDFqZg",
+      "language": "spanish",
+      "artist": "enrique-iglesias",
+      "name": "bailando",
+      "image": "enrique-iglesias-bailando.jpg",
+      "css": "light-blue"
+    },
+    {
+      "youtube_id": "wTZ7A-h8yTs",
+      "language": "spanish",
+      "artist": "shakira",
+      "name": "tu",
+      "image": "shakira-tu.jpg",
+      "css": "light-blue"
     }
   ]
 }
