@@ -16,10 +16,12 @@ $(document).ready(function() {
     grade();
   }
 
-  function grade() {
+  (function grade() {
     var numCorrect = $("input.correct").length;
+    var totalQuestions = $("input").length;
     $('.score').html(numCorrect);
-  }
+    $('.total-questions').html(totalQuestions);
+  })()
 
   function addCorrectnessClass($input) {
     var userAnswer = $input.val().toLowerCase();
