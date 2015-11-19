@@ -175,6 +175,14 @@
       "name": "blurred-lines",
       "image": "robin-thicke-blurred-lines.jpg",
       "css": "light-blue"
+    },
+    {
+      "youtube_id": "psuRGfAaju4",
+      "language": "english",
+      "artist": "owl-city",
+      "name": "fireflies",
+      "image": "owl-city-fireflies.jpg",
+      "css": "light-blue"
     }
   ]
 }
