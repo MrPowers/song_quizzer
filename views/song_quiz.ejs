@@ -16,14 +16,13 @@
           <h1 class="title text-center"><%= song.name.toUpperCase() %></h1>
         </div>
       </div>
-      <br />
-      <div class="col-md-12 text-center">
+      <div class="col-md-6 text-center">
         <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/<%= song.youtube_id %>" frameborder="0"></iframe>
-      </div>
-        <div class="col-md-12 text-center">
-          <%- include('song_quizzes/' + song.name + '.ejs') %>
-        </div>
         <h2 class="text-center">Your Score: <span class="score">0</span></h2>
-    </div>
+      </div>
+      <div class="col-md-6 text-center lyric-quiz">
+        <%- include('song_quizzes/' + song.name + '.ejs') %>
+      </div>
+    </div> <!--container-->
   </body>
 </html>

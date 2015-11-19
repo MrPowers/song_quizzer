@@ -41,3 +41,8 @@ p {
   font-size:65px;
   margin-bottom: 35px;
 }
+
+.lyric-quiz {
+  height: 500px;
+  overflow: scroll;
+}
