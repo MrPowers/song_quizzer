@@ -16,11 +16,16 @@ $(document).ready(function() {
     grade();
   }
 
-  (function grade() {
+  function grade() {
     var numCorrect = $("input.correct").length;
-    var totalQuestions = $("input").length;
     $('.score').html(numCorrect);
+  }
+
+  // invoke the function on page load to initially set the values
+  (function setInitialScore() {
+    var totalQuestions = $("input").length;
     $('.total-questions').html(totalQuestions);
+    grade()
   })()
 
   function addCorrectnessClass($input) {
