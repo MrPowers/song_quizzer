@@ -233,6 +233,24 @@
       "image": "shakira-tu.jpg",
       "css": "night",
       "genre": "pop"
+    },
+    {
+      "youtube_id": "OPf0YbXqDm0",
+      "language": "english",
+      "artist": "bruno-mars",
+      "name": "uptown-funk",
+      "image": "bruno-mars-uptown-funk.jpg",
+      "css": "light-blue",
+      "genre": "pop"
+    },
+    {
+      "youtube_id": "VMp55KH_3wo",
+      "language": "spanish",
+      "artist": "marc-anthony",
+      "name": "la-gozadera",
+      "image": "marc-anthony-la-gozadera.jpg",
+      "css": "orange",
+      "genre": "pop"
     }
   ]
 }
