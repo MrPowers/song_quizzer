@@ -62,7 +62,8 @@ app.get('/:artist/:song/:lines_per_blank', function(request, response) {
       counter = 1;
       var words = row.split(" ");
       var i = _.random(words.length - 1);
-      words[i] = "<input type='text' data-answer='" + words[i].toLowerCase() + "' placeholder='ingrese la palabra'>";
+      var answer = words[i].replace(/[?.,-\/#!$%\^&\*;:{}=\-_`~()]/g,"");
+      words[i] = '<input type="text" data-answer="' + answer + '" placeholder="ingrese la palabra">';
       return(words.join(" "));
     } else {
       counter++;

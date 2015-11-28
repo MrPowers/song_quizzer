@@ -30,7 +30,7 @@ $(document).ready(function() {
 
   function addCorrectnessClass($input) {
     var userAnswer = $input.val().toLowerCase();
-    var correctAnswer = $input.data("answer");
+    var correctAnswer = $input.data("answer").toLowerCase();
     if (userAnswer === "") return;
     if (userAnswer === correctAnswer) {
       $input.addClass("correct");
@@ -49,7 +49,7 @@ $(document).ready(function() {
     } else if ($input.hasClass("incorrect")) {
       var correctAnswer = $input.data("answer");
       var incorrectCross = "<span class='incorrect fa-stack fa-1x'><i class='fa fa-times-circle fa-2x'></i></span>"
-      var help = "<span data-toggle='tooltip' data-placement='top' data-original-title='" + correctAnswer + "' class='fa-stack fa-1x'><i class='fa fa-question-circle fa-2x'></i></span>"
+      var help = '<span data-toggle="tooltip" data-placement="top" data-original-title="' + correctAnswer + '" class="fa-stack fa-1x"><i class="fa fa-question-circle fa-2x"></i></span>'
       s.html(incorrectCross + help)
       $('[data-toggle="tooltip"]').tooltip();
     }
