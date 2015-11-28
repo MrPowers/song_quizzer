@@ -42,14 +42,15 @@ app.get('/', function(request, response) {
         language: "english"
       }
     ],
-    showLanguageFilter: true
+    showLanguageFilter: true,
+    showDifficultyFilter: false
   });
 })
 
 var fs = require('fs');
 var path = require('path');
 
-app.get('/:artist/:song/:lines_per_blank', function(request, response) {
+app.get('/:artist/:song', function(request, response) {
   var filePath = path.join(__dirname, 'song_data', request.params.song + '.txt');
   var songData;
 
@@ -58,7 +59,7 @@ app.get('/:artist/:song/:lines_per_blank', function(request, response) {
   var counter = 1;
   var rows = data.map(function(row) {
     if (row === '') {return ''};
-    if (request.params.lines_per_blank == counter) {
+    if (request.query.lines_per_blank == counter) {
       counter = 1;
       var words = row.split(" ");
       var i = _.random(words.length - 1);
@@ -75,7 +76,8 @@ app.get('/:artist/:song/:lines_per_blank', function(request, response) {
   response.render('smart_song_quiz', {
     song: foundSong,
     songData: rows,
-    showLanguageFilter: false
+    showLanguageFilter: false,
+    showDifficultyFilter: true
   } );
 })
 
