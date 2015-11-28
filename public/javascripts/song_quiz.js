@@ -72,4 +72,14 @@ $(document).ready(function() {
     addEnterListener($value);
   });
 
+  $(window).resize(function() {
+    // This will fire each time the window is resized:
+    if($(window).width() >= 1024) {
+      // if larger or equal
+      $('.lyric-quiz').addClass('quiz-scroller');
+    } else {
+      $('.lyric-quiz').removeClass('quiz-scroller');
+    }
+  }).resize(); // This will simulate a resize to trigger the initial run.
+
 });
