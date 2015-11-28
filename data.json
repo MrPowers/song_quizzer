@@ -269,6 +269,15 @@
       "image": "we-dem-boyz.jpeg",
       "css": "orange",
       "genre": "rap"
+    },
+    {
+      "youtube_id": "QJO3ROT-A4E",
+      "language": "english",
+      "artist": "one-direction",
+      "name": "what-makes-you-beautiful",
+      "image": "what-makes-you-beautiful.jpg",
+      "css": "orange",
+      "genre": "pop"
     }
   ]
 }
