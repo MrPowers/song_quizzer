@@ -251,6 +251,24 @@
       "image": "marc-anthony-la-gozadera.jpg",
       "css": "orange",
       "genre": "pop"
+    },
+    {
+      "youtube_id": "A_J7kEhY9sM",
+      "language": "english",
+      "artist": "machine-gun-kelly",
+      "name": "wild-boy",
+      "image": "wild-boy.jpg",
+      "css": "orange",
+      "genre": "rap"
+    },
+    {
+      "youtube_id": "UX6K7waag5Q",
+      "language": "english",
+      "artist": "wiz-khalifa",
+      "name": "we-dem-boyz",
+      "image": "we-dem-boyz.jpeg",
+      "css": "orange",
+      "genre": "rap"
     }
   ]
 }
