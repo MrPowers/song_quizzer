@@ -46,10 +46,34 @@ app.get('/', function(request, response) {
   });
 })
 
-app.get('/:artist/:song', function(request, response) {
+var fs = require('fs');
+var path = require('path');
+
+app.get('/:artist/:song/:lines_per_blank', function(request, response) {
+  var filePath = path.join(__dirname, 'song_data', request.params.song + '.txt');
+  var songData;
+
+  var newline = require('os').EOL;
+  var data = fs.readFileSync(filePath).toString().split(newline);
+  var counter = 1;
+  var rows = data.map(function(row) {
+    if (row === '') {return ''};
+    if (request.params.lines_per_blank == counter) {
+      counter = 1;
+      var words = row.split(" ");
+      var i = _.random(words.length - 1);
+      words[i] = "<input type='text' data-answer='" + words[i].toLowerCase() + "' placeholder='ingrese la palabra'>";
+      return(words.join(" "));
+    } else {
+      counter++;
+      return(row);
+    }
+  });
+
   var foundSong = appdata.songs.find(s => s.name === request.params.song);
-  response.render('song_quiz', {
+  response.render('smart_song_quiz', {
     song: foundSong,
+    songData: rows,
     showLanguageFilter: false
   } );
 })
