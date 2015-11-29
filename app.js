@@ -63,7 +63,10 @@ app.get('/:artist/:song', function(request, response) {
     if (words[0] === "SKIP") { return(words.slice(1, words.length).join(" ")) };
     if (request.query.lines_per_blank == counter) {
       counter = 1;
-      var i = _.random(words.length - 1);
+      var indexes = [];
+      words.forEach(function(w, i) { if(!w.startsWith("SKIP")) {return indexes.push(i)} });
+      var i = _.sample(indexes);
+      if (indexes.length === 0) { return(words.join(" ")) };
       var answer = words[i].replace(/[?.,-\/#!$%\^&\*;:{}=\-_`~()]/g,"");
       words[i] = '<input type="text" data-answer="' + answer + '" placeholder="ingrese la palabra">';
       return(words.join(" "));
@@ -72,6 +75,8 @@ app.get('/:artist/:song', function(request, response) {
       return(row);
     }
   });
+
+  rows = rows.map(row => row.replace(/SKIP/g, ""));
 
   var foundSong = appdata.songs.find(s => s.name === request.params.song);
   response.render('smart_song_quiz', {
