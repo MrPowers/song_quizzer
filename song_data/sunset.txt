@@ -3,9 +3,9 @@ Sentados solos frente al mar
 Tu besándome y yo besándote
 Disfrutamos de un momento especial
 
-Ay ay ay ay iah ieh iah iah iah ioh
+SKIP Ay ay ay ay iah ieh iah iah iah ioh
 Yo quiero hacerte el amor
-Ay ay ay ay iah ieh iah iah iah ioh
+SKIP Ay ay ay ay iah ieh iah iah iah ioh
 Aprovechemos que ya se escondió el sol
 
 Entremos al agua tu y yo
@@ -33,9 +33,9 @@ Sentados solos frente al mar
 Tu besándome y yo besándote
 Disfrutamos de un momento especial
 
-Ay ay ay ay iah ieh iah iah iah ioh
+SKIP Ay ay ay ay iah ieh iah iah iah ioh
 Yo quiero hacerte el amor
-Ay ay ay ay iah ieh iah iah iah ioh
+SKIP Ay ay ay ay iah ieh iah iah iah ioh
 Aprovechemos que ya se escondió el sol
 
 Te gusta sentir la arena en tu piel
@@ -53,8 +53,8 @@ Sentados solos frente al mar
 Tu besándome y yo besándote
 Disfrutamos de un momento especial
 
-Ay ay ay ay iah ieh iah iah iah ioh
+SKIP Ay ay ay ay iah ieh iah iah iah ioh
 Yo quiero hacerte el amor
-Ay ay ay ay iah ieh iah iah iah ioh
+SKIP Ay ay ay ay iah ieh iah iah iah ioh
 Aprovechemos que ya se escondió el sol
 
