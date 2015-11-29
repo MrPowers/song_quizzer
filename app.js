@@ -59,9 +59,10 @@ app.get('/:artist/:song', function(request, response) {
   var counter = 1;
   var rows = data.map(function(row) {
     if (row === '') {return ''};
+    var words = row.split(" ");
+    if (words[0] === "SKIP") { return(words.slice(1, words.length).join(" ")) };
     if (request.query.lines_per_blank == counter) {
       counter = 1;
-      var words = row.split(" ");
       var i = _.random(words.length - 1);
       var answer = words[i].replace(/[?.,-\/#!$%\^&\*;:{}=\-_`~()]/g,"");
       words[i] = '<input type="text" data-answer="' + answer + '" placeholder="ingrese la palabra">';
