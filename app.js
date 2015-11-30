@@ -56,7 +56,7 @@ app.get('/:artist/:song', function(request, response) {
 
   var newline = require('os').EOL;
   var data = fs.readFileSync(filePath).toString().split(newline);
-  var counter = 1;
+  var counter = _.random(1, request.query.lines_per_blank);
   var rows = data.map(function(row) {
     if (row === '') {return ''};
     var words = row.split(" ");
