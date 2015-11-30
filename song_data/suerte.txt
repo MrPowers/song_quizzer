@@ -7,8 +7,8 @@ por ir a contar tus lunares
 contigo celebro y sufro todo
 mis alegrias y mis males
 
-Le ro lo le lo le
-le ro lo le lo le
+SKIP Le ro lo le lo le
+SKIP le ro lo le lo le
 Sabes que estoy a tus pies
 
 Contigo, mi vida
@@ -29,15 +29,15 @@ para correr si un dia hace falta
 Y estos dos ojos que me dicen
 Que he de llorar cuando te vallas
 
-Le ro lo le lo le
-Le ro lo le lo le
+SKIP Le ro lo le lo le
+SKIP Le ro lo le lo le
 Sabes que estoy a tus pies
 
-Le ro lo le lo le
-le ro lo le lo le
+SKIP Le ro lo le lo le
+SKIP le ro lo le lo le
 Sabes que estoy a tus pies
 
-Le ro lo le lo le lo la
+SKIP Le ro lo le lo le lo la
 La felicidad tiene tu
 nombre y tu piel
 
@@ -50,7 +50,7 @@ estoy hasta el cuello por ti
 Si sientes algo asi
 Quiero que te quedes junto a mi.
 
-Le ro lo le lo le
-le ro lo le lo le
+SKIP Le ro lo le lo le
+SKIP le ro lo le lo le
 Sabes que estoy a tus pies
 
