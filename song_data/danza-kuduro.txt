@@ -1,17 +1,17 @@
-A and X, El Orfanato
-Danza Kuduro
-Lucenzo El Orfanato
+SKIP A and X, El Orfanato
+Danza SKIPKuduro
+SKIP Lucenzo El Orfanato
 El rey
 
 La mano arriba, cintura sola
-Da media vuelta, Danza Kuduro
+Da media vuelta, Danza SKIPKuduro
 No me canses ahora, que esto solo empieza
-Mueve la cabeza, Danza Kuduro
+Mueve la cabeza, Danza SKIPKuduro
 
 La mano arriba, cintura sola
-Da media vuelta, Danza Kuduro
+Da media vuelta, Danza SKIPKuduro
 No me canses ahora, que esto solo empieza
-Mueve la cabeza, Danza Kuduro
+Mueve la cabeza, Danza SKIPKuduro
 
 Quien puede domar la fuerza del mar
 Que se mete por tus venas
@@ -28,54 +28,53 @@ Da media vuelta y sacude duro
 No te quites ahora, que esto solo empieza
 Mueve la cabeza y sacude duro
 
-Balancar que uma loucura
-Morena vem o meu lado
-Ninguem vai ficar parado
-Quero ver, mexa Kuduro
-Balancar que una loucura
-Morena vem o meu lado
-Ninguem vai ficar parado oh
+SKIP Balancar que uma loucura
+SKIP Morena vem o meu lado
+SKIP Ninguem vai ficar parado
+SKIP Quero ver, mexa Kuduro
+SKIP Balancar que una loucura
+SKIP Morena vem o meu lado
+SKIP Ninguem vai ficar parado oh
 
-Oi oi oi, oi oi oi oi
-E para quebrar Kuduro, vamos Danza Kuduro
-Oi oi oi, oi oi oi oi
-Seja morena o loira, vem balancar Kuduro
-Oi oi oi
+SKIP Oi oi oi, oi oi oi oi
+SKIP E para quebrar Kuduro, vamos Danza Kuduro
+SKIP Oi oi oi, oi oi oi oi
+SKIP Seja morena o loira, vem balancar Kuduro
+SKIP Oi oi oi
 
 La manos arriba, cintura sola
-Da media vuelta, Danza Kuduro
+Da media vuelta, Danza SKIPKuduro
 No te canses ahora, que esto solo empieza
-Mueve la cabeza, Danza Kuduro
+Mueve la cabeza, Danza SKIPKuduro
 
 La manos arriba cintura sola
-Da media vuelta Danza Kuduro
+Da media vuelta Danza SKIPKuduro
 No te canses ahora que esto solo empieza
-Mueve la cabeza Danza Kuduro
+Mueve la cabeza Danza SKIPKuduro
 
-Balancar que uma loucura
-Morena vem o meu lado
-Ninguem vai ficar parado
-Quero ver mexa Kuduro
-Balancar que uma loucura
-Morena vem o meu lado
-Ninguem vai ficar parado oh
+SKIP Balancar que uma loucura
+SKIP Morena vem o meu lado
+SKIP Ninguem vai ficar parado
+SKIP Quero ver mexa SKIPKuduro
+SKIP Balancar que uma loucura
+SKIP Morena vem o meu lado
+SKIP Ninguem vai ficar parado oh
 
-Oi oi oi, oi oi oi oi
-E para quebrar Kuduro, vamos Danza Kuduro
-Oi oi oi, oi oi oi oi
-Seja morena o loira, vem balancar Kuduro
-Oi oi oi
-El Orfanato
-
-La mano arriba, cintura sola
-Da media vuelta, Danza Kuduro
-No te canses ahora, que esto solo empieza
-Mueve la cabeza, Danza Kuduro
+SKIP Oi oi oi, oi oi oi oi
+SKIP E para quebrar Kuduro, vamos Danza Kuduro
+SKIP Oi oi oi, oi oi oi oi
+SKIP Seja morena o loira, vem balancar Kuduro
+SKIP Oi oi oi
+SKIP El Orfanato
 
 La mano arriba, cintura sola
-Da media vuelta, Danza Kuduro
+Da media vuelta, Danza SKIPKuduro
 No te canses ahora, que esto solo empieza
-Mueve la cabeza, Danza Kuduro
+Mueve la cabeza, Danza SKIPKuduro
 
-A and X
+La mano arriba, cintura sola
+Da media vuelta, Danza SKIPKuduro
+No te canses ahora, que esto solo empieza
+Mueve la cabeza, Danza SKIPKuduro
 
+SKIP A and X

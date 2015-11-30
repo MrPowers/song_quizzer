@@ -8,22 +8,22 @@ Hay mentiras compasivas
 Hay mentiras por piedad
 Que no quieren lastimar
 Hay mentiras que nos hieren de verdad
-Ay, ay, ay
+SKIP Ay, ay, ay
 
 Hay engaños que por años
 Ocultaron la verdad
 Haciendo mucho daño
-Ay, yo me voy a refugiar
+SKIPAy, yo me voy a refugiar
 A la tierra de tu amor (mi verdad)
 
 Tú eres mi amor, mi alegría
 La verdad de mi vida
-Mi bebe que me salta a los brazos de prisa
+Mi bebé que me salta a los brazos de prisa
 Tú eres mi refugio y mi verdad
 
 Tú eres mi amor, mi alegría
 La verdad de mi vida
-Mi bebe que me calma el alma con risas
+Mi bebé que me calma el alma con risas
 Tú eres mi refugio y mi verdad
 
 Hay mentira en la mirada
@@ -36,22 +36,22 @@ Hay doctrinas y oradores
 Dictadores sin piedad
 Que gobiernan sin verdad
 Y hay mentiras en los diarios, en las redes
-Y en el mar, ay ay ay
+Y en el mar, SKIPay SKIPay SKIPay
 
 Hay engaños que por años
 Ocultaron la verdad
 Hiriendo de dolor
-Ay, yo me voy a refugiar
+SKIPAy, yo me voy a refugiar
 Al oasis de tu amor
 
 Tú eres mi amor, mi alegría
 La verdad de mi vida
-Mi bebe que me salta a los brazos de prisa
+Mi bebé que me salta a los brazos de prisa
 Tú eres mi refugio y mi verdad
 
 Oye, tú eres mi amor, mi alegría
 La verdad de mi vida
-Mi bebe que me calma el alma con risas
+Mi bebé que me calma el alma con risas
 Tú eres mi refugio y mi verdad
 
 En un mundo tan irreal
@@ -66,4 +66,3 @@ Tú eres la voz que me calma
 Tú eres la lluvia de mi alma
 Y eres toda mi verdad
 Eres toda mi verdad
-
