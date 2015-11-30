@@ -67,7 +67,7 @@ app.get('/:artist/:song', function(request, response) {
       words.forEach(function(w, i) { if(!w.startsWith("SKIP")) {return indexes.push(i)} });
       var i = _.sample(indexes);
       if (indexes.length === 0) { return(words.join(" ")) };
-      var answer = words[i].replace(/[?.,-\/#!$%\^&\*;:{}=\-_`~()]/g,"");
+      var answer = words[i].replace(/[?.,\/#!$%\^&\*;:{}=\_`~()]/g,"");
       words[i] = '<input type="text" data-answer="' + answer + '" placeholder="ingrese la palabra">';
       return(words.join(" "));
     } else {
