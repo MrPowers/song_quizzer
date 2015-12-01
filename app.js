@@ -53,8 +53,6 @@ var path = require('path');
 
 app.get('/:artist/:song', function(request, response) {
   var filePath = path.join(__dirname, 'song_data', request.params.song + '.txt');
-  var songData;
-
   var newline = require('os').EOL;
   var data = fs.readFileSync(filePath).toString().split(newline);
   var difficultyToLines = {
