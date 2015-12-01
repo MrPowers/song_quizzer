@@ -56,12 +56,20 @@ app.get('/:artist/:song', function(request, response) {
 
   var newline = require('os').EOL;
   var data = fs.readFileSync(filePath).toString().split(newline);
-  var counter = _.random(1, request.query.lines_per_blank);
+  var difficultyToLines = {
+    easy: 4,
+    normal: 3,
+    hard: 2,
+    insane: 1
+  };
+  var difficulty = request.query.difficulty;
+  var linesPerBlank = difficultyToLines[difficulty]
+  var counter = _.random(1, linesPerBlank);
   var rows = data.map(function(row) {
     if (row === '') {return ''};
     var words = row.split(" ");
     if (words[0] === "SKIP") { return(words.slice(1, words.length).join(" ")) };
-    if (request.query.lines_per_blank == counter) {
+    if (linesPerBlank == counter) {
       counter = 1;
       var indexes = [];
       words.forEach(function(w, i) { if(!w.startsWith("SKIP")) {return indexes.push(i)} });
@@ -83,7 +91,8 @@ app.get('/:artist/:song', function(request, response) {
     song: foundSong,
     songData: rows,
     showLanguageFilter: false,
-    showDifficultyFilter: true
+    showDifficultyFilter: true,
+    difficulty: difficulty
   } );
 })
 

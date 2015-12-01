@@ -25,12 +25,11 @@
         <% } %>
         <% if(showDifficultyFilter) { %>
           <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Difficulty <span class="caret"></span></a>
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Difficulty: <%= difficulty %> <span class="caret"></span></a>
             <ul class="dropdown-menu">
-              <li class="language-selector"><a href="?lines_per_blank=4">Easy</a></li>
-              <li class="language-selector"><a href="?lines_per_blank=3">Normal</a></li>
-              <li class="language-selector"><a href="?lines_per_blank=2">Hard</a></li>
-              <li class="language-selector"><a href="?lines_per_blank=1">Insane</a></li>
+              <% ["easy", "normal", "hard", "insane"].forEach(function(s) { %>
+                <li class="language-selector"><a href="?difficulty=<%= s %>"><%= s %></a></li>
+              <% }); %>
             </ul>
           </li> <!-- dropdown -->
         <% } %>
