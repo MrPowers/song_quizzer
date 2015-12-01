@@ -22,7 +22,7 @@
                       <div class="item <%if (index===0) {%>  active <%}%>">
                           <div class="row">
                               <% songs.forEach(function(song) { %>
-                                <div class="col-sm-3"><a href="/<%= song.artist %>/<%= song.name %>?lines_per_blank=3"><img src="/images/<%= song.image %>" alt="Image" class="img-responsive"></a>
+                                <div class="col-sm-3"><a href="/<%= song.artist %>/<%= song.name %>?difficulty=normal"><img src="/images/<%= song.image %>" alt="Image" class="img-responsive"></a>
                               </div>
                               <% }); %>
                           </div> <!--/row-->

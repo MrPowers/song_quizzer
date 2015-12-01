@@ -25,23 +25,24 @@ var appdata = require("./data.json")
 var _ = require("lodash")
 
 app.get('/', function(request, response) {
-  var spanishSongs = appdata.songs.filter(s => s.language === "spanish");
-  var englishSongs = appdata.songs.filter(s => s.language === "english");
+  var categories = [
+    ['english', 'hot'],
+    ['spanish', 'hot'],
+    ['engligh', 'pop'],
+    ['spanish', 'pop'],
+    ['english', 'rap'],
+    ['english', 'boy-band'],
+  ];
+  var data = categories.map(function(c) {
+    var songs = appdata.songs.filter(s => s.language === c[0] && s.genre === c[1]);
+    return {
+      all: _.chunk(songs, 4),
+      id: c[0] + "-" + c[1],
+      language: c[0]
+    }
+  });
   response.render('index', {
-    songData: [
-      {
-        name: "Spanish Songs",
-        all: _.chunk(spanishSongs, 4),
-        id: "spanish-songs",
-        language: "spanish"
-      },
-      {
-        name: "English Songs",
-        all: _.chunk(englishSongs, 4),
-        id: "english-songs",
-        language: "english"
-      }
-    ],
+    songData: data,
     showLanguageFilter: true,
     showDifficultyFilter: false
   });
