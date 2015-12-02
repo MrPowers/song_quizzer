@@ -1,0 +1,35 @@
+body {
+  background-color: #000;
+  opacity: 80%;
+}
+
+.carousel {
+  background-color: #000;
+  position: relative;
+  padding: 10px;     /* Shows as a border around the carousel */
+}
+
+.well {
+  padding: 0px;
+  border: none;
+  margin: 0px;
+}
+
+.carousel-control {
+  width: 0;
+}
+
+.carousel-control .glyphicon {
+  font-size: 40px;
+}
+
+.carousel-control.left {
+  margin-left: -15px;
+}
+
+.carousel .carousel-control { visibility: hidden; }
+.carousel:hover .carousel-control { visibility: visible; }
+
+.song-thumbnail {
+  padding: 5px;
+}

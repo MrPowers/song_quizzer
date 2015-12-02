@@ -2,7 +2,7 @@
 <html>
   <head>
     <% include partials/head %>
-    <link rel='stylesheet' href='/stylesheets/carousel_overrides.css' />
+    <link rel='stylesheet' href='/stylesheets/index.css' />
     <script type="text/javascript" src="/javascripts/filter.js"></script>
   </head>
   <body>
@@ -22,7 +22,7 @@
                       <div class="item <%if (index===0) {%>  active <%}%>">
                           <div class="row">
                               <% songs.forEach(function(song) { %>
-                                <div class="col-sm-3"><a href="/<%= song.artist %>/<%= song.name %>?difficulty=normal"><img src="/images/<%= song.image %>" alt="Image" class="img-responsive"></a>
+                                <div class="col-sm-3 song-thumbnail"><a href="/<%= song.artist %>/<%= song.name %>?difficulty=normal"><img src="/images/<%= song.image %>" alt="Image" class="img-responsive"></a>
                               </div>
                               <% }); %>
                           </div> <!--/row-->

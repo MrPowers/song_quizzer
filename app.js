@@ -28,7 +28,7 @@ app.get('/', function(request, response) {
   var categories = [
     ['english', 'hot'],
     ['spanish', 'hot'],
-    ['engligh', 'pop'],
+    ['english', 'pop'],
     ['spanish', 'pop'],
     ['english', 'rap'],
     ['english', 'boy-band'],
