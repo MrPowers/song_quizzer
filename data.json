@@ -1,6 +1,15 @@
 {
   "songs": [
     {
+      "youtube_id": "OxxggwHFj7M",
+      "language": "spanish",
+      "artist": "nicky-jam",
+      "name": "travesuras",
+      "image": "nicky-jam-travesuras.jpg",
+      "css": "orange",
+      "genre": "hot"
+    },
+    {
       "youtube_id": "Xk0wdDTTPA0",
       "language": "spanish",
       "artist": "maluma",
@@ -269,6 +278,15 @@
       "image": "what-makes-you-beautiful.jpg",
       "css": "orange",
       "genre": "boy-band"
+    },
+    {
+      "youtube_id": "7T_09ueky2o",
+      "language": "spanish",
+      "artist": "nicky-jam",
+      "name": "voy-a-beber",
+      "image": "nicky-jam-voy-a-beber.jpeg",
+      "css": "orange",
+      "genre": "hot"
     },
     {
       "youtube_id": "Geqmpq0tjNU",
