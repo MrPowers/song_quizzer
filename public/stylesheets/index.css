@@ -9,6 +9,12 @@ body {
   padding: 10px;     /* Shows as a border around the carousel */
 }
 
+.row-title {
+  font-size: 16px;
+  color: #999;
+  font-weight: 700;
+}
+
 .well {
   padding: 0px;
   border: none;

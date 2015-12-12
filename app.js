@@ -38,8 +38,8 @@ app.get('/', function(request, response) {
     var songs = appdata.songs.filter(s => s.language === c[0] && s.genre === c[1]);
     return {
       all: _.chunk(songs, 4),
-      id: c[0] + "-" + c[1],
-      language: c[0]
+      language: c[0],
+      genre: c[1]
     }
   });
   response.render('index', {
