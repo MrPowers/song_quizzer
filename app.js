@@ -31,6 +31,7 @@ app.get('/', function(request, response) {
     ['english', 'pop'],
     ['spanish', 'pop'],
     ['english', 'rap'],
+    ['spanish', 'chill'],
     ['english', 'boy-band'],
   ];
   var data = categories.map(function(c) {
