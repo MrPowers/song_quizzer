@@ -26,20 +26,19 @@ var _ = require("lodash")
 
 app.get('/', function(request, response) {
   var categories = [
-    ['english', 'hot'],
-    ['spanish', 'hot'],
-    ['english', 'pop'],
-    ['spanish', 'pop'],
-    ['english', 'rap'],
-    ['spanish', 'chill'],
-    ['english', 'boy-band'],
+    {language: 'english', genre: 'pop', hot: true},
+    {language: 'spanish', genre: 'pop', hot: true},
+    {language: 'english', genre: 'pop', hot: false},
+    {language: 'spanish', genre: 'pop', hot: false},
+    {language: 'english', genre: 'rap', hot: false},
+    {language: 'spanish', genre: 'chill', hot: false},
+    {language: 'english', genre: 'boy-band', hot: false}
   ];
   var data = categories.map(function(c) {
-    var songs = appdata.songs.filter(s => s.language === c[0] && s.genre === c[1]);
+    var songs = appdata.songs.filter(s => s.language === c.language && s.genre === c.genre && s.hot === c.hot);
     return {
       all: _.chunk(songs, 4),
-      language: c[0],
-      genre: c[1]
+      category: c
     }
   });
   response.render('index', {

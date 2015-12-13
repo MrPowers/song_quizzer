@@ -8,7 +8,8 @@
       "name": "ginza",
       "image": "j-balvin-ginza.jpg",
       "css": "light-blue",
-      "genre": "hot"
+      "hot": true,
+      "genre": "pop"
     },
     {
       "youtube_id": "uU_FFtbCcLc",
@@ -17,7 +18,8 @@
       "name": "el-perdon",
       "image": "nicky-jam-el-perdon.png",
       "css": "light-blue",
-      "genre": "hot"
+      "hot": true,
+      "genre": "pop"
     },
     {
       "youtube_id": "Xk0wdDTTPA0",
@@ -26,7 +28,8 @@
       "name": "borro-cassette",
       "image": "maluma-borro-cassette.jpeg",
       "css": "orange",
-      "genre": "hot"
+      "hot": true,
+      "genre": "pop"
     },
     {
       "youtube_id": "QFs3PIZb3js",
@@ -35,7 +38,8 @@
       "name": "propuesta-indecente",
       "image": "romeo-santos-propuesta-indecente.jpg",
       "css": "orange",
-      "genre": "hot"
+      "hot": true,
+      "genre": "pop"
     },
     {
       "youtube_id": "ZBMsSPR9QMg",
@@ -44,7 +48,8 @@
       "name": "sunset",
       "image": "farruko-sunset.jpeg",
       "css": "light-blue",
-      "genre": "hot"
+      "hot": true,
+      "genre": "pop"
     },
 
 
@@ -55,7 +60,8 @@
       "name": "hello",
       "image": "adele-hello.jpg",
       "css": "pink",
-      "genre": "hot"
+      "hot": true,
+      "genre": "pop"
     },
     {
       "youtube_id": "fRh_vgS2dFE",
@@ -64,7 +70,8 @@
       "name": "sorry",
       "image": "justin-beiber-sorry.jpg",
       "css": "checkers",
-      "genre": "hot"
+      "hot": true,
+      "genre": "pop"
     },
 
 
@@ -75,6 +82,7 @@
       "name": "travesuras",
       "image": "nicky-jam-travesuras.jpg",
       "css": "orange",
+      "hot": false,
       "genre": "pop"
     },
     {
@@ -84,6 +92,7 @@
       "name": "voy-a-beber",
       "image": "nicky-jam-voy-a-beber.jpeg",
       "css": "orange",
+      "hot": false,
       "genre": "pop"
     },
     {
@@ -93,6 +102,7 @@
       "name": "cuando-nos-volvemos-a-encontrar",
       "image": "marc-anthony-cuando-nos-volvemos-a-encontrar.jpg",
       "css": "orange",
+      "hot": false,
       "genre": "pop"
     },
     {
@@ -102,6 +112,7 @@
       "name": "me-voy",
       "image": "julieta-venegas-me-voy.jpg",
       "css": "light-blue",
+      "hot": false,
       "genre": "pop"
     },
     {
@@ -111,6 +122,7 @@
       "name": "danza-kuduro",
       "image": "don-omar-danza-kuduro.JPG",
       "css": "night",
+      "hot": false,
       "genre": "pop"
     },
     {
@@ -120,6 +132,7 @@
       "name": "suerte",
       "image": "shakira-suerte.jpg",
       "css": "light-blue",
+      "hot": false,
       "genre": "pop"
     },
     {
@@ -129,6 +142,7 @@
       "name": "waka-waka",
       "image": "shakira-waka-waka.jpeg",
       "css": "orange",
+      "hot": false,
       "genre": "pop"
     },
     {
@@ -138,6 +152,7 @@
       "name": "baby",
       "image": "justin-bieber-baby.jpg",
       "css": "checkers",
+      "hot": false,
       "genre": "pop"
     },
     {
@@ -147,6 +162,7 @@
       "name": "call-me-maybe",
       "image": "carly-rae-jepsen-call-me-maybe.png",
       "css": "light-blue",
+      "hot": false,
       "genre": "pop"
     },
     {
@@ -156,6 +172,7 @@
       "name": "someone-like-you",
       "image": "adele-someone-like-you.jpg",
       "css": "light-blue",
+      "hot": false,
       "genre": "pop"
     },
     {
@@ -165,6 +182,7 @@
       "name": "somebody-that-i-used-to-know",
       "image": "gotye-somebody-that-i-used-to-know.jpg",
       "css": "light-blue",
+      "hot": false,
       "genre": "pop"
     },
     {
@@ -174,6 +192,7 @@
       "name": "blurred-lines",
       "image": "robin-thicke-blurred-lines.jpg",
       "css": "light-blue",
+      "hot": false,
       "genre": "pop"
     },
     {
@@ -183,6 +202,7 @@
       "name": "fireflies",
       "image": "owl-city-fireflies.jpg",
       "css": "light-blue",
+      "hot": false,
       "genre": "pop"
     },
     {
@@ -192,6 +212,7 @@
       "name": "mi-verdad",
       "image": "mana-mi-verdad.jpg",
       "css": "orange",
+      "hot": false,
       "genre": "pop"
     },
     {
@@ -201,7 +222,8 @@
       "name": "bailando",
       "image": "enrique-iglesias-bailando.jpg",
       "css": "orange",
-      "genre": "hot"
+      "hot": false,
+      "genre": "pop"
     },
     {
       "youtube_id": "wTZ7A-h8yTs",
@@ -210,6 +232,7 @@
       "name": "tu",
       "image": "shakira-tu.jpg",
       "css": "night",
+      "hot": false,
       "genre": "pop"
     },
     {
@@ -219,6 +242,7 @@
       "name": "la-gozadera",
       "image": "marc-anthony-la-gozadera.jpg",
       "css": "orange",
+      "hot": false,
       "genre": "pop"
     },
     {
@@ -228,6 +252,7 @@
       "name": "como-yo-le-doy",
       "image": "pitbull-como-yo-le-doy.jpg",
       "css": "orange",
+      "hot": false,
       "genre": "pop"
     },
     {
@@ -237,6 +262,7 @@
       "name": "fanatica-sensual",
       "image": "plan-b-fanatica-sensual.jpg",
       "css": "orange",
+      "hot": false,
       "genre": "pop"
     },
     {
@@ -246,10 +272,9 @@
       "name": "mi-vecinita",
       "image": "plan-b-mi-vecinita.jpg",
       "css": "orange",
+      "hot": false,
       "genre": "pop"
     },
-
-
 
 
 
@@ -261,6 +286,7 @@
       "name": "diamonds",
       "image": "rihanna-diamonds.jpeg",
       "css": "checkers",
+      "hot": false,
       "genre": "pop"
     },
     {
@@ -270,6 +296,7 @@
       "name": "uptown-funk",
       "image": "bruno-mars-uptown-funk.jpg",
       "css": "light-blue",
+      "hot": false,
       "genre": "pop"
     },
     {
@@ -279,6 +306,7 @@
       "name": "rude",
       "image": "magic-rude.png",
       "css": "orange",
+      "hot": false,
       "genre": "pop"
     },
     {
@@ -288,6 +316,7 @@
       "name": "roar",
       "image": "katy-perry-roar.jpg",
       "css": "light-blue",
+      "hot": false,
       "genre": "pop"
     },
     {
@@ -297,6 +326,7 @@
       "name": "shake-it-off",
       "image": "taylor-swift-shake-it-off.jpg",
       "css": "pink",
+      "hot": false,
       "genre": "pop"
     },
 
@@ -310,6 +340,7 @@
       "name": "juicy",
       "image": "notorious-big-juicy.jpg",
       "css": "night",
+      "hot": false,
       "genre": "rap"
     },
     {
@@ -319,6 +350,7 @@
       "name": "wild-boy",
       "image": "wild-boy.jpg",
       "css": "orange",
+      "hot": false,
       "genre": "rap"
     },
     {
@@ -328,6 +360,7 @@
       "name": "we-dem-boyz",
       "image": "we-dem-boyz.jpeg",
       "css": "orange",
+      "hot": false,
       "genre": "rap"
     },
 
@@ -339,6 +372,7 @@
       "name": "agua",
       "image": "jarabe-de-palo-agua.jpg",
       "css": "orange",
+      "hot": false,
       "genre": "chill"
     },
 
@@ -350,6 +384,7 @@
       "name": "what-makes-you-beautiful",
       "image": "what-makes-you-beautiful.jpg",
       "css": "orange",
+      "hot": false,
       "genre": "boy-band"
     }
 
