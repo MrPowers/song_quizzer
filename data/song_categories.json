@@ -1,0 +1,42 @@
+{
+  "categories": [
+
+    {
+      "language": "english",
+      "genre": "pop",
+      "hot": true
+    },
+    {
+      "language": "spanish",
+      "genre": "pop",
+      "hot": true
+    },
+    {
+      "language": "english",
+      "genre": "pop",
+      "hot": false
+    },
+    {
+      "language": "spanish",
+      "genre": "pop",
+      "hot": false
+    },
+    {
+      "language": "english",
+      "genre": "rap",
+      "hot": false
+    },
+    {
+      "language": "spanish",
+      "genre": "chill",
+      "hot": false
+    },
+    {
+      "language": "english",
+      "genre": "boy-band",
+      "hot": false
+    }
+
+  ]
+}
+

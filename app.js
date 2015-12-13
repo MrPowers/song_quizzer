@@ -21,24 +21,17 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-var appdata = require("./data.json")
+var appdata = require("./data/songs.json")
+var songCategories = require("./data/song_categories.json").categories
 var _ = require("lodash")
 
 app.get('/', function(request, response) {
-  var categories = [
-    {language: 'english', genre: 'pop', hot: true},
-    {language: 'spanish', genre: 'pop', hot: true},
-    {language: 'english', genre: 'pop', hot: false},
-    {language: 'spanish', genre: 'pop', hot: false},
-    {language: 'english', genre: 'rap', hot: false},
-    {language: 'spanish', genre: 'chill', hot: false},
-    {language: 'english', genre: 'boy-band', hot: false}
-  ];
-  var data = categories.map(function(c) {
+  var data = songCategories.map(function(c) {
     var songs = appdata.songs.filter(s => s.language === c.language && s.genre === c.genre && s.hot === c.hot);
     return {
       all: _.chunk(songs, 4),
-      category: c
+      category: c,
+      id: c.language + "-" + c.genre + "-" + c.hot
     }
   });
   response.render('index', {
