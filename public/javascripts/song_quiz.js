@@ -1,5 +1,34 @@
 $(document).ready(function() {
 
+
+  function setLyrics() {
+    var params = $('.parameters').data();
+    $.get( '/lyrics', params, function(data) {
+      var $lyrics = $('.lyric-quiz');
+      $lyrics.empty();
+      data.forEach(function(row) {
+        $lyrics.append(row + "<br />");
+      });
+      main();
+    });
+  }
+
+  setLyrics();
+
+  function updateDifficultyDisplay() {
+    var difficulty = $('.parameters').data('difficulty');
+    $('.current-difficulty').text(difficulty);
+  }
+
+  $.each($(".language-selector"), function( index, value ) {
+    $( value ).click(function() {
+      var difficulty = $(this).data('difficulty');
+      $('.parameters').data('difficulty', difficulty);
+      setLyrics();
+      updateDifficultyDisplay();
+    });
+  });
+
   // code for the input boxes for lyric answers
 
   function checkCorrectness($input) {
@@ -21,12 +50,11 @@ $(document).ready(function() {
     $('.score').html(numCorrect);
   }
 
-  // invoke the function on page load to initially set the values
-  (function setInitialScore() {
+  function setInitialScore() {
     var totalQuestions = $("input").length;
     $('.total-questions').html(totalQuestions);
     grade()
-  })()
+  }
 
   function addCorrectnessClass($input) {
     var userAnswer = $input.val().toLowerCase();
@@ -64,13 +92,16 @@ $(document).ready(function() {
   }
 
 
-  $.each($("input"), function( index, value ) {
-    var $value = $(value);
-    // add spans after all the input boxes for the markCorrectness() function
-    $("<span class='answer-correctness'></span>").insertAfter($value)
-    checkCorrectness($value);
-    addEnterListener($value);
-  });
+  function main() {
+    $.each($("input"), function( index, value ) {
+      var $value = $(value);
+      // add spans after all the input boxes for the markCorrectness() function
+      $("<span class='answer-correctness'></span>").insertAfter($value)
+      setInitialScore();
+      checkCorrectness($value);
+      addEnterListener($value);
+    });
+  }
 
   $(window).resize(function() {
     // This will fire each time the window is resized:

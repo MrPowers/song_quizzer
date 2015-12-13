@@ -47,7 +47,18 @@ var fs = require('fs');
 var path = require('path');
 
 app.get('/:artist/:song', function(request, response) {
-  var filePath = path.join(__dirname, 'song_data', request.params.song + '.txt');
+  var foundSong = appdata.songs.find(s => s.name === request.params.song);
+  response.render('smart_song_quiz', {
+    song: foundSong,
+    showLanguageFilter: false,
+    showDifficultyFilter: true,
+    // HARDCODED
+    difficulty: "normal"
+  } );
+})
+
+app.get('/lyrics', function(request, response) {
+  var filePath = path.join(__dirname, 'song_data', request.query.song + '.txt');
   var newline = require('os').EOL;
   var data = fs.readFileSync(filePath).toString().split(newline);
   var difficultyToLines = {
@@ -56,8 +67,7 @@ app.get('/:artist/:song', function(request, response) {
     hard: 2,
     insane: 1
   };
-  var difficulty = request.query.difficulty;
-  var linesPerBlank = difficultyToLines[difficulty]
+  var linesPerBlank = difficultyToLines[request.query.difficulty]
   var counter = _.random(1, linesPerBlank);
   var rows = data.map(function(row) {
     if (row === '') {return ''};
@@ -79,15 +89,7 @@ app.get('/:artist/:song', function(request, response) {
   });
 
   rows = rows.map(row => row.replace(/SKIP/g, ""));
-
-  var foundSong = appdata.songs.find(s => s.name === request.params.song);
-  response.render('smart_song_quiz', {
-    song: foundSong,
-    songData: rows,
-    showLanguageFilter: false,
-    showDifficultyFilter: true,
-    difficulty: difficulty
-  } );
+  response.send(rows);
 })
 
 // catch 404 and forward to error handler

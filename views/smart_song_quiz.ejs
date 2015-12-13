@@ -21,10 +21,9 @@
         <h2 class="text-center">Score: <span class="score"></span> / <span class="total-questions"></span></h2>
       </div>
       <div class="col-md-6 text-center lyric-quiz">
-        <% songData.forEach(function(row) { %>
-          <%- row %><br />
-        <% }); %>
       </div>
     </div> <!--container-->
+    <div class="parameters hide" data-song="<%= song.name %>" data-difficulty="<%= difficulty %>">
+    </div>
   </body>
 </html>
