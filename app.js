@@ -27,7 +27,9 @@ var _ = require("lodash")
 
 app.get('/', function(request, response) {
   var data = songCategories.map(function(c) {
-    var songs = appdata.songs.filter(s => s.language === c.language && s.genre === c.genre && s.hot === c.hot);
+    var songs = appdata.songs.filter( s =>
+      s.language === c.language && s.genre === c.genre && s.hot === c.hot
+    );
     return {
       all: _.chunk(songs, 4),
       category: c,
