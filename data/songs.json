@@ -275,6 +275,17 @@
       "hot": false,
       "genre": "pop"
     },
+    {
+      "youtube_id": "qRp3-D3SMwI",
+      "language": "spanish",
+      "artist": "osmani-garcia",
+      "name": "el-taxi",
+      "image": "osmani-garcia-el-taxi.jpeg",
+      "css": "orange",
+      "hot": false,
+      "genre": "pop"
+    },
+
 
 
 
