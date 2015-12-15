@@ -285,6 +285,27 @@
       "hot": false,
       "genre": "pop"
     },
+    {
+      "youtube_id": "TapXs54Ah3E",
+      "language": "spanish",
+      "artist": "j-balvin",
+      "name": "ay-vamos",
+      "image": "j-balvin-ay-vamos.jpg",
+      "css": "light-blue",
+      "hot": false,
+      "genre": "pop"
+    },
+    {
+      "youtube_id": "bdOXnTbyk0g",
+      "language": "spanish",
+      "artist": "prince-royce",
+      "name": "darte-un-beso",
+      "image": "prince-royce-darte-un-beso.jpg",
+      "css": "light-blue",
+      "hot": false,
+      "genre": "pop"
+    },
+
 
 
 
