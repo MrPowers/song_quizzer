@@ -66,13 +66,45 @@
     {
       "youtube_id": "fRh_vgS2dFE",
       "language": "english",
-      "artist": "justin-beiber",
+      "artist": "justin-bieber",
       "name": "sorry",
-      "image": "justin-beiber-sorry.jpg",
+      "image": "justin-bieber-sorry.jpg",
       "css": "checkers",
       "hot": true,
       "genre": "pop"
     },
+    {
+      "youtube_id": "uxpDa-c-4Mc",
+      "language": "english",
+      "artist": "drake",
+      "name": "hotline-bling",
+      "image": "drake-hotline-bling.jpeg",
+      "css": "checkers",
+      "hot": true,
+      "genre": "pop"
+    },
+    {
+      "youtube_id": "DK_0jXPuIr0",
+      "language": "english",
+      "artist": "justin-bieber",
+      "name": "what-do-you-mean",
+      "image": "justin-bieber-what-do-you-mean.jpeg",
+      "css": "checkers",
+      "hot": true,
+      "genre": "pop"
+    },
+    {
+      "youtube_id": "DK_0jXPuIr0",
+      "language": "english",
+      "artist": "shawn-mendes",
+      "name": "stitches",
+      "image": "shawn-mendes-stitches.jpeg",
+      "css": "checkers",
+      "hot": true,
+      "genre": "pop"
+    },
+
+
 
 
     {
@@ -148,7 +180,7 @@
     {
       "youtube_id": "kffacxfA7G4",
       "language": "english",
-      "artist": "justin-beiber",
+      "artist": "justin-bieber",
       "name": "baby",
       "image": "justin-bieber-baby.jpg",
       "css": "checkers",
