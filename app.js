@@ -58,7 +58,8 @@ app.get('/:artist/:song', function(request, response) {
 })
 
 app.get('/lyrics', function(request, response) {
-  var filePath = path.join(__dirname, 'song_data', request.query.song + '.txt');
+  var song = appdata.songs.find(s => s.name === request.query.song);
+  var filePath = path.join(__dirname, 'song_data', song.name + '.txt');
   var newline = require('os').EOL;
   var data = fs.readFileSync(filePath).toString().split(newline);
   var difficultyToLines = {
@@ -80,7 +81,8 @@ app.get('/lyrics', function(request, response) {
       var i = _.sample(indexes);
       if (indexes.length === 0) { return(words.join(" ")) };
       var answer = words[i].replace(/[?.,\/#!$%\^&\*;:{}=\_`~()]/g,"");
-      words[i] = '<input type="text" data-answer="' + answer + '" placeholder="ingrese la palabra">';
+      var placeholder = song.language === "spanish" ? 'ingrese la palabra' : 'enter the word';
+      words[i] = '<input type="text" data-answer="' + answer + '" placeholder="' + placeholder + '">';
       return(words.join(" "));
     } else {
       counter++;
