@@ -28,7 +28,7 @@
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Difficulty: <span class='current-difficulty'><%= difficulty %></span> <span class="caret"></span></a>
             <ul class="dropdown-menu">
               <% ["easy", "normal", "hard", "insane"].forEach(function(s) { %>
-                <li class="language-selector" data-difficulty="<%= s %>"><%= s %></li>
+                <li class="language-selector" data-difficulty="<%= s %>"><a href="#"><%= s %></a></li>
               <% }); %>
             </ul>
           </li> <!-- dropdown -->
