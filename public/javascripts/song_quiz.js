@@ -79,7 +79,7 @@ $(document).ready(function() {
       var incorrectCross = "<span class='incorrect fa-stack fa-1x'><i class='fa fa-times-circle fa-2x'></i></span>"
       var help = '<span data-toggle="tooltip" data-placement="top" data-original-title="' + correctAnswer + '" class="fa-stack fa-1x"><i class="fa fa-question-circle fa-2x"></i></span>'
       s.html(incorrectCross + help)
-      $('[data-toggle="tooltip"]').tooltip();
+      $('[data-toggle="tooltip"]').tooltip({ container: 'body' });
     }
   }
 
