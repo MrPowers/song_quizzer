@@ -115,7 +115,7 @@
       "image": "nicky-jam-travesuras.jpg",
       "css": "orange",
       "hot": false,
-      "genre": "pop"
+      "genre": "reggaeton"
     },
     {
       "youtube_id": "7T_09ueky2o",
@@ -123,6 +123,92 @@
       "artist": "nicky-jam",
       "name": "voy-a-beber",
       "image": "nicky-jam-voy-a-beber.jpeg",
+      "css": "orange",
+      "hot": false,
+      "genre": "reggaeton"
+    },
+    {
+      "youtube_id": "7zp1TbLFPp8",
+      "language": "spanish",
+      "artist": "don-omar",
+      "name": "danza-kuduro",
+      "image": "don-omar-danza-kuduro.JPG",
+      "css": "night",
+      "hot": false,
+      "genre": "reggaeton"
+    },
+    {
+      "youtube_id": "QvypZSdjO8M",
+      "language": "spanish",
+      "artist": "plan-b",
+      "name": "fanatica-sensual",
+      "image": "plan-b-fanatica-sensual.jpg",
+      "css": "orange",
+      "hot": false,
+      "genre": "reggaeton"
+    },
+    {
+      "youtube_id": "SB8-YY2DyHI",
+      "language": "spanish",
+      "artist": "plan-b",
+      "name": "mi-vecinita",
+      "image": "plan-b-mi-vecinita.jpg",
+      "css": "orange",
+      "hot": false,
+      "genre": "reggaeton"
+    },
+    {
+      "youtube_id": "qRp3-D3SMwI",
+      "language": "spanish",
+      "artist": "osmani-garcia",
+      "name": "el-taxi",
+      "image": "osmani-garcia-el-taxi.jpeg",
+      "css": "orange",
+      "hot": false,
+      "genre": "reggaeton"
+    },
+    {
+      "youtube_id": "TapXs54Ah3E",
+      "language": "spanish",
+      "artist": "j-balvin",
+      "name": "ay-vamos",
+      "image": "j-balvin-ay-vamos.jpg",
+      "css": "light-blue",
+      "hot": false,
+      "genre": "reggaeton"
+    },
+    {
+      "youtube_id": "yUV9JwiQLog",
+      "language": "spanish",
+      "artist": "j-balvin",
+      "name": "6am",
+      "image": "j-balvin-6am.jpg",
+      "css": "light-blue",
+      "hot": false,
+      "genre": "reggaeton"
+    },
+    {
+      "youtube_id": "zCB8Z_fO2Yo",
+      "language": "spanish",
+      "artist": "pitbull",
+      "name": "como-yo-le-doy",
+      "image": "pitbull-como-yo-le-doy.jpg",
+      "css": "orange",
+      "hot": false,
+      "genre": "reggaeton"
+    },
+
+
+
+
+
+
+    {
+      "youtube_id": "NUsoVlDFqZg",
+      "language": "spanish",
+      "artist": "enrique-iglesias",
+      "name": "bailando",
+      "image": "enrique-iglesias-bailando.jpg",
       "css": "orange",
       "hot": false,
       "genre": "pop"
@@ -148,16 +234,6 @@
       "genre": "pop"
     },
     {
-      "youtube_id": "7zp1TbLFPp8",
-      "language": "spanish",
-      "artist": "don-omar",
-      "name": "danza-kuduro",
-      "image": "don-omar-danza-kuduro.JPG",
-      "css": "night",
-      "hot": false,
-      "genre": "pop"
-    },
-    {
       "youtube_id": "a8Rwz6zBJSE",
       "language": "spanish",
       "artist": "shakira",
@@ -177,6 +253,60 @@
       "hot": false,
       "genre": "pop"
     },
+    {
+      "youtube_id": "ZuupMrAhGXw",
+      "language": "spanish",
+      "artist": "mana",
+      "name": "mi-verdad",
+      "image": "mana-mi-verdad.jpg",
+      "css": "orange",
+      "hot": false,
+      "genre": "pop"
+    },
+    {
+      "youtube_id": "wTZ7A-h8yTs",
+      "language": "spanish",
+      "artist": "shakira",
+      "name": "tu",
+      "image": "shakira-tu.jpg",
+      "css": "night",
+      "hot": false,
+      "genre": "pop"
+    },
+    {
+      "youtube_id": "VMp55KH_3wo",
+      "language": "spanish",
+      "artist": "marc-anthony",
+      "name": "la-gozadera",
+      "image": "marc-anthony-la-gozadera.jpg",
+      "css": "orange",
+      "hot": false,
+      "genre": "pop"
+    },
+    {
+      "youtube_id": "bdOXnTbyk0g",
+      "language": "spanish",
+      "artist": "prince-royce",
+      "name": "darte-un-beso",
+      "image": "prince-royce-darte-un-beso.jpg",
+      "css": "light-blue",
+      "hot": false,
+      "genre": "pop"
+    },
+    {
+      "youtube_id": "2GhF2mPKnDg",
+      "language": "spanish",
+      "artist": "jarabe-de-palo",
+      "name": "agua",
+      "image": "jarabe-de-palo-agua.jpg",
+      "css": "orange",
+      "hot": false,
+      "genre": "chill"
+    },
+
+
+
+
     {
       "youtube_id": "kffacxfA7G4",
       "language": "english",
@@ -237,117 +367,6 @@
       "hot": false,
       "genre": "pop"
     },
-    {
-      "youtube_id": "ZuupMrAhGXw",
-      "language": "spanish",
-      "artist": "mana",
-      "name": "mi-verdad",
-      "image": "mana-mi-verdad.jpg",
-      "css": "orange",
-      "hot": false,
-      "genre": "pop"
-    },
-    {
-      "youtube_id": "NUsoVlDFqZg",
-      "language": "spanish",
-      "artist": "enrique-iglesias",
-      "name": "bailando",
-      "image": "enrique-iglesias-bailando.jpg",
-      "css": "orange",
-      "hot": false,
-      "genre": "pop"
-    },
-    {
-      "youtube_id": "wTZ7A-h8yTs",
-      "language": "spanish",
-      "artist": "shakira",
-      "name": "tu",
-      "image": "shakira-tu.jpg",
-      "css": "night",
-      "hot": false,
-      "genre": "pop"
-    },
-    {
-      "youtube_id": "VMp55KH_3wo",
-      "language": "spanish",
-      "artist": "marc-anthony",
-      "name": "la-gozadera",
-      "image": "marc-anthony-la-gozadera.jpg",
-      "css": "orange",
-      "hot": false,
-      "genre": "pop"
-    },
-    {
-      "youtube_id": "zCB8Z_fO2Yo",
-      "language": "spanish",
-      "artist": "pitbull",
-      "name": "como-yo-le-doy",
-      "image": "pitbull-como-yo-le-doy.jpg",
-      "css": "orange",
-      "hot": false,
-      "genre": "pop"
-    },
-    {
-      "youtube_id": "QvypZSdjO8M",
-      "language": "spanish",
-      "artist": "plan-b",
-      "name": "fanatica-sensual",
-      "image": "plan-b-fanatica-sensual.jpg",
-      "css": "orange",
-      "hot": false,
-      "genre": "pop"
-    },
-    {
-      "youtube_id": "SB8-YY2DyHI",
-      "language": "spanish",
-      "artist": "plan-b",
-      "name": "mi-vecinita",
-      "image": "plan-b-mi-vecinita.jpg",
-      "css": "orange",
-      "hot": false,
-      "genre": "pop"
-    },
-    {
-      "youtube_id": "qRp3-D3SMwI",
-      "language": "spanish",
-      "artist": "osmani-garcia",
-      "name": "el-taxi",
-      "image": "osmani-garcia-el-taxi.jpeg",
-      "css": "orange",
-      "hot": false,
-      "genre": "pop"
-    },
-    {
-      "youtube_id": "TapXs54Ah3E",
-      "language": "spanish",
-      "artist": "j-balvin",
-      "name": "ay-vamos",
-      "image": "j-balvin-ay-vamos.jpg",
-      "css": "light-blue",
-      "hot": false,
-      "genre": "pop"
-    },
-    {
-      "youtube_id": "bdOXnTbyk0g",
-      "language": "spanish",
-      "artist": "prince-royce",
-      "name": "darte-un-beso",
-      "image": "prince-royce-darte-un-beso.jpg",
-      "css": "light-blue",
-      "hot": false,
-      "genre": "pop"
-    },
-    {
-      "youtube_id": "yUV9JwiQLog",
-      "language": "spanish",
-      "artist": "j-balvin",
-      "name": "6am",
-      "image": "j-balvin-6am.jpg",
-      "css": "light-blue",
-      "hot": false,
-      "genre": "pop"
-    },
-
 
 
 
@@ -439,17 +458,6 @@
       "genre": "rap"
     },
 
-
-    {
-      "youtube_id": "2GhF2mPKnDg",
-      "language": "spanish",
-      "artist": "jarabe-de-palo",
-      "name": "agua",
-      "image": "jarabe-de-palo-agua.jpg",
-      "css": "orange",
-      "hot": false,
-      "genre": "chill"
-    },
 
 
     {
