@@ -4,7 +4,7 @@ $(document).ready(function() {
   function setLyrics() {
     var params = $('.parameters').data();
     $.get( '/lyrics', params, function(data) {
-      var $lyrics = $('.lyric-quiz');
+      var $lyrics = $('.lyrics');
       $lyrics.empty();
       data.forEach(function(row) {
         $lyrics.append(row + "<br />");
