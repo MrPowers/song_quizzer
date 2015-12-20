@@ -461,6 +461,43 @@
 
 
     {
+      "youtube_id": "Fjg3n5nt550",
+      "language": "spanish",
+      "artist": "cultura-profetica",
+      "name": "la-complicidad",
+      "image": "cultura-profetica-la-complicidad.jpg",
+      "css": "orange",
+      "hot": false,
+      "genre": "reggae"
+    },
+    {
+      "youtube_id": "dTb9Nd7UKvQ",
+      "language": "spanish",
+      "artist": "cultura-profetica",
+      "name": "baja-la-tension",
+      "image": "cultura-profetica-baja-la-tension.jpg",
+      "css": "orange",
+      "hot": false,
+      "genre": "reggae"
+    },
+    {
+      "youtube_id": "Rj_-uT7M5uo",
+      "language": "spanish",
+      "artist": "cultura-profetica",
+      "name": "rimas-para-seducir",
+      "image": "cultura-profetica-rimas-para-seducir.jpg",
+      "css": "orange",
+      "hot": false,
+      "genre": "reggae"
+    },
+
+
+
+
+
+
+
+    {
       "youtube_id": "QJO3ROT-A4E",
       "language": "english",
       "artist": "one-direction",

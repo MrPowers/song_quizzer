@@ -1,6 +1,5 @@
 $(document).ready(function() {
 
-
   function setLyrics() {
     var params = $('.parameters').data();
     $.get( '/lyrics', params, function(data) {
