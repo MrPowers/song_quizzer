@@ -32,16 +32,6 @@
       "genre": "pop"
     },
     {
-      "youtube_id": "QFs3PIZb3js",
-      "language": "spanish",
-      "artist": "romeo-santos",
-      "name": "propuesta-indecente",
-      "image": "romeo-santos-propuesta-indecente.jpg",
-      "css": "orange",
-      "hot": true,
-      "genre": "pop"
-    },
-    {
       "youtube_id": "ZBMsSPR9QMg",
       "language": "spanish",
       "artist": "farruko",
@@ -107,6 +97,16 @@
 
 
 
+    {
+      "youtube_id": "3rgwIp6D3ow",
+      "language": "spanish",
+      "artist": "wisin-yandel",
+      "name": "algo-me-gusta-de-ti",
+      "image": "wistin-yandel-algo-me-gusta-de-ti.jpg",
+      "css": "orange",
+      "hot": false,
+      "genre": "reggaeton"
+    },
     {
       "youtube_id": "6BTjG-dhf5s",
       "language": "spanish",
@@ -210,6 +210,48 @@
 
 
 
+    {
+      "youtube_id": "QFs3PIZb3js",
+      "language": "spanish",
+      "artist": "romeo-santos",
+      "name": "propuesta-indecente",
+      "image": "romeo-santos-propuesta-indecente.jpg",
+      "css": "orange",
+      "hot": false,
+      "genre": "bachata"
+    },
+    {
+      "youtube_id": "bdOXnTbyk0g",
+      "language": "spanish",
+      "artist": "prince-royce",
+      "name": "darte-un-beso",
+      "image": "prince-royce-darte-un-beso.jpg",
+      "css": "light-blue",
+      "hot": false,
+      "genre": "bachata"
+    },
+    {
+      "youtube_id": "jk4HYngf65w",
+      "language": "spanish",
+      "artist": "romeo-santos",
+      "name": "cancioncitas-de-amor",
+      "image": "romeo-santos-cancioncitas-de-amor.jpg",
+      "css": "light-blue",
+      "hot": false,
+      "genre": "bachata"
+    },
+    {
+      "youtube_id": "RSyUWjftHrs",
+      "language": "spanish",
+      "artist": "enrique-iglesias",
+      "name": "loco",
+      "image": "enrique-iglesias-loco.jpg",
+      "css": "light-blue",
+      "hot": false,
+      "genre": "bachata"
+    },
+
+
 
 
 
@@ -290,16 +332,6 @@
       "name": "la-gozadera",
       "image": "marc-anthony-la-gozadera.jpg",
       "css": "orange",
-      "hot": false,
-      "genre": "pop"
-    },
-    {
-      "youtube_id": "bdOXnTbyk0g",
-      "language": "spanish",
-      "artist": "prince-royce",
-      "name": "darte-un-beso",
-      "image": "prince-royce-darte-un-beso.jpg",
-      "css": "light-blue",
       "hot": false,
       "genre": "pop"
     },
