@@ -535,6 +535,27 @@
 
 
 
+    {
+      "youtube_id": "DtEXcC5Z9wE",
+      "language": "spanish",
+      "artist": "twister-el-rey",
+      "name": "la-espeluca",
+      "image": "twister-el-rey-la-espeluca.jpg",
+      "css": "orange",
+      "hot": false,
+      "genre": "champeta"
+    },
+    {
+      "youtube_id": "xZF8PSFUZ8g",
+      "language": "spanish",
+      "artist": "kevin-florez",
+      "name": "la-invite-a-bailar",
+      "image": "kevin-florez-la-invite-a-bailar.jpg",
+      "css": "orange",
+      "hot": false,
+      "genre": "champeta"
+    },
+
 
 
 
