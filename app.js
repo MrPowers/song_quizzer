@@ -81,9 +81,8 @@ app.get('/lyrics', function(request, response) {
       var i = _.sample(indexes);
       if (indexes.length === 0) { return(words.join(" ")) };
       var answer = words[i].replace(/[?.,\/#!$%\^&\*;:{}=\_`~()]/g,"");
-      var placeholder = song.language === "spanish" ? 'ingrese la palabra' : 'enter the word';
       var inputSize = answer.length + _.random(1, 5);
-      words[i] = '<input type="text" size="' + inputSize + '" data-answer="' + answer + '" placeholder="' + placeholder + '">';
+      words[i] = '<input type="text" size="' + inputSize + '" data-answer="' + answer + '">';
       return(words.join(" "));
     } else {
       counter++;
