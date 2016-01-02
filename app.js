@@ -30,8 +30,9 @@ app.get('/', function(request, response) {
     var songs = appdata.songs.filter( s =>
       s.language === c.language && s.genre === c.genre && s.hot === c.hot
     );
+    var shuffledSongs = _.shuffle(songs);
     return {
-      all: _.chunk(songs, 4),
+      all: _.chunk(shuffledSongs, 4),
       category: c,
       id: c.language + "-" + c.genre + "-" + c.hot
     }
