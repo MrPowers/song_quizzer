@@ -207,6 +207,16 @@
       "hot": false,
       "genre": "reggaeton"
     },
+    {
+      "youtube_id": "Z-3su2ov8Vg",
+      "language": "spanish",
+      "artist": "don-omar",
+      "name": "salio-el-sol",
+      "image": "don-omar-salio-el-sol.jpg",
+      "css": "orange",
+      "hot": false,
+      "genre": "reggaeton"
+    },
 
 
 
@@ -255,6 +265,16 @@
 
 
 
+    {
+      "youtube_id": "av3wkasS-WQ",
+      "language": "spanish",
+      "artist": "mana",
+      "name": "mariposa-traicionera",
+      "image": "mana-mariposa-traicionera.jpg",
+      "css": "orange",
+      "hot": false,
+      "genre": "pop"
+    },
     {
       "youtube_id": "NUsoVlDFqZg",
       "language": "spanish",
@@ -343,7 +363,7 @@
       "image": "jarabe-de-palo-agua.jpg",
       "css": "orange",
       "hot": false,
-      "genre": "chill"
+      "genre": "pop"
     },
 
 
