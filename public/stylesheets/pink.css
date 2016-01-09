@@ -1,10 +1,12 @@
 body{
 background-color: #F2527D;
+font-size: 16px;
+font-weight: 500;
 background-image: linear-gradient(90deg, rgba(255,255,255,.07) 50%, transparent 50%),
 linear-gradient(90deg, rgba(255,255,255,.13) 50%, transparent 50%),
 linear-gradient(90deg, transparent 50%, rgba(255,255,255,.17) 50%),
 linear-gradient(90deg, transparent 50%, rgba(255,255,255,.19) 50%);
-background-size: 30px, 38px, 44px, 60px;
+background-size: 60px, 30px, 60px, 30px;
 }
 
 p{
