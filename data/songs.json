@@ -217,6 +217,17 @@
       "hot": false,
       "genre": "reggaeton"
     },
+    {
+      "youtube_id": "EfF9EE6ZR5E",
+      "language": "spanish",
+      "artist": "daddy-yankee",
+      "name": "sigueme-y-te-sigo",
+      "image": "daddy-yankee-sigueme-y-te-sigo.jpg",
+      "css": "orange",
+      "hot": false,
+      "genre": "reggaeton"
+    },
+
 
 
 
@@ -246,6 +257,16 @@
       "artist": "chino-nacho",
       "name": "me-voy-enamorando",
       "image": "chino-nacho-me-voy-enamorando.jpg",
+      "css": "orange",
+      "hot": false,
+      "genre": "romantic-reggaeton"
+    },
+    {
+      "youtube_id": "0yr75-gxVtM",
+      "language": "spanish",
+      "artist": "bigal",
+      "name": "mi-declaracion",
+      "image": "bigal-mi-declaracion.jpg",
       "css": "orange",
       "hot": false,
       "genre": "romantic-reggaeton"
