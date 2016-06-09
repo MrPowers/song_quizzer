@@ -108,6 +108,16 @@
 
 
     {
+      "youtube_id": "alqqFtduaFA",
+      "language": "spanish",
+      "artist": "xantos",
+      "name": "bailame-despacio",
+      "image": "xantos-bailame-despacio.jpg",
+      "css": "orange",
+      "hot": false,
+      "genre": "reggaeton"
+    },
+    {
       "youtube_id": "3rgwIp6D3ow",
       "language": "spanish",
       "artist": "wisin-yandel",
@@ -272,7 +282,7 @@
       "genre": "romantic-reggaeton"
     },
     {
-      "youtube_id": "0yr75-gxVtM",
+      "youtube_id": "cz3KDu_Vgb8",
       "language": "spanish",
       "artist": "bigal",
       "name": "mi-declaracion",
