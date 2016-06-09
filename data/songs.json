@@ -2,6 +2,16 @@
   "songs": [
 
     {
+      "youtube_id": "0GvLP2C2w9U",
+      "language": "spanish",
+      "artist": "j-balvin",
+      "name": "bobo",
+      "image": "bobo-j-balvin.jpg",
+      "css": "light-blue",
+      "hot": true,
+      "genre": "pop"
+    },
+    {
       "youtube_id": "kkx-7fsiWgg",
       "language": "spanish",
       "artist": "nicky-jam",
