@@ -46,6 +46,13 @@ app.get('/', function(request, response) {
   });
 })
 
+app.get('/learn-spanish', function(request, response) {
+  response.render('learn_spanish', {
+    showLanguageFilter: false,
+    showDifficultyFilter: false
+  });
+})
+
 var fs = require('fs');
 var path = require('path');
 
