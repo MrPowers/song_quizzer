@@ -46,7 +46,7 @@ app.get('/', function(request, response) {
   });
 })
 
-app.get('/learn-spanish', function(request, response) {
+app.get('/learn-spanish-music-television-movies', function(request, response) {
   response.render('learn_spanish', {
     showLanguageFilter: false,
     showDifficultyFilter: false
