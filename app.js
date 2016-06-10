@@ -53,6 +53,13 @@ app.get('/learn-spanish-music-television-movies', function(request, response) {
   });
 })
 
+app.get('/language-tutor', function(request, response) {
+  response.render('language_tutor', {
+    showLanguageFilter: false,
+    showDifficultyFilter: false
+  });
+})
+
 var fs = require('fs');
 var path = require('path');
 
