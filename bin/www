@@ -4,7 +4,7 @@
  * Module dependencies.
  */
 
-var app = require('../app');
+var app = require('../public/javascripts/bundle.js');
 var debug = require('debug')('song_quizzer:server');
 var http = require('http');
 
