@@ -1,4 +1,3 @@
-var makeVideoPlayableInline = require('iphone-inline-video');
 
 $(document).ready(function() {
   var video = $('video').get(0);
