@@ -6,6 +6,7 @@
     <link rel='stylesheet' href='/stylesheets/<%= song.css %>.css' />
     <link rel='stylesheet' href='/stylesheets/navbar.css' />
     <script type="text/javascript" src="/javascripts/song_quiz.js"></script>
+    <script src="/javascripts/iphone-inline-video/dist/iphone-inline-video.browser.js"></script>
   </head>
   <body>
     <% include partials/navbar %>
@@ -19,7 +20,7 @@
         </div>
       </div>
       <div class="col-md-6 text-center">
-        <video class="video" width="560" height="315" src="https://www.youtube.com/embed/<%= song.youtube_id %>" frameborder="0"></video>
+        <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/<%= song.youtube_id %>" frameborder="0"></iframe>
         <h2 class="text-center">Score: <span class="score"></span> / <span class="total-questions"></span></h2>
       </div>
       <div class="col-md-6 text-center lyric-quiz">
@@ -31,5 +32,4 @@
     <div class="parameters hide" data-song="<%= song.name %>" data-difficulty="<%= difficulty %>">
     </div>
   </body>
-  <script type="text/javascript" src="../node_modules/iphone-inline-video/dist/iphone-inline-video.browser.js"></script>
 </html>

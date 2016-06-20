@@ -1,6 +1,6 @@
 
 $(document).ready(function() {
-  var video = $('video').get(0);
+  var video = $('iframe').get(0);
   makeVideoPlayableInline(video);
 
   function setLyrics() {

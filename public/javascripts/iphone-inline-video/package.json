@@ -1,0 +1,106 @@
+{
+  "name": "iphone-inline-video",
+  "version": "1.9.1",
+  "description": "Make videos playable inline on the iPhone (prevents automatic fullscreen)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bfred-it/iphone-inline-video.git"
+  },
+  "author": {
+    "name": "Federico Brigante",
+    "email": "bfred-it@users.noreply.github.com",
+    "url": "twitter.com/bfred_it"
+  },
+  "keywords": [
+    "browser",
+    "iphone",
+    "ios",
+    "play",
+    "video",
+    "inline",
+    "fullscreen",
+    "full screen",
+    "ipod",
+    "autoplay",
+    "multiple",
+    "audio",
+    "sound",
+    "canvas",
+    "gif"
+  ],
+  "files": [
+    "dist/iphone-inline-video.common-js.js",
+    "dist/iphone-inline-video.es-modules.js",
+    "dist/iphone-inline-video.browser.js"
+  ],
+  "main": "dist/iphone-inline-video.common-js.js",
+  "jsnext:main": "dist/iphone-inline-video.es-modules.js",
+  "babel": {
+    "presets": [
+      "es2015-rollup"
+    ]
+  },
+  "scripts": {
+    "build:js": "bfred-npm-bundler iphone-inline-video makeVideoPlayableInline",
+    "build:size": "gzip-size dist/iphone-inline-video.browser.js",
+    "build": "npm-run-all --silent jsfix build:*",
+    "jsfix": "xo --fix",
+    "watch:server": "browser-sync start --startPath demo --no-ghost-mode --reload-delay 300 --no-open --server --files 'dist/*.browser.js,demo/**'",
+    "watch:build": "onchange 'index.js' 'lib/*' -i -- npm run build -- -c",
+    "watch": "npm-run-all --parallel --silent watch:*",
+    "prepublish": "npm run build",
+    "test": "xo; npm run build"
+  },
+  "devDependencies": {
+    "babel-preset-es2015-rollup": "^1.1.1",
+    "bfred-npm-bundler": "^5.0.0",
+    "browser-sync": "^2.11.2",
+    "gzip-size-cli": "^1.0.0",
+    "npm-run-all": "^1.7.0",
+    "onchange": "^2.2.0",
+    "xo": "^0.13.0"
+  },
+  "xo": {
+    "esnext": true,
+    "ignores": [
+      "demo/**"
+    ],
+    "env": [
+      "browser"
+    ],
+    "rules": {
+      "prefer-template": 0
+    }
+  },
+  "bugs": {
+    "url": "https://github.com/bfred-it/iphone-inline-video/issues"
+  },
+  "homepage": "https://github.com/bfred-it/iphone-inline-video#readme",
+  "gitHead": "8fc162f2469d51039cafdf9d3a0b1ae569e8f3bf",
+  "_id": "iphone-inline-video@1.9.1",
+  "_shasum": "21beb7e15f59fb9a2506f46cd114416d00acb7e6",
+  "_from": "iphone-inline-video@latest",
+  "_npmVersion": "3.7.3",
+  "_nodeVersion": "5.8.0",
+  "_npmUser": {
+    "name": "bfred-it",
+    "email": "npm@bfred.it"
+  },
+  "maintainers": [
+    {
+      "name": "bfred-it",
+      "email": "npm@bfred.it"
+    }
+  ],
+  "dist": {
+    "shasum": "21beb7e15f59fb9a2506f46cd114416d00acb7e6",
+    "tarball": "https://registry.npmjs.org/iphone-inline-video/-/iphone-inline-video-1.9.1.tgz"
+  },
+  "_npmOperationalInternal": {
+    "host": "packages-12-west.internal.npmjs.com",
+    "tmp": "tmp/iphone-inline-video-1.9.1.tgz_1466268186925_0.06591499131172895"
+  },
+  "directories": {},
+  "_resolved": "https://registry.npmjs.org/iphone-inline-video/-/iphone-inline-video-1.9.1.tgz"
+}
