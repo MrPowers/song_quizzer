@@ -1,7 +1,9 @@
 
 $(document).ready(function() {
   var video = $('iframe').get(0);
+  console.log(video);
   makeVideoPlayableInline(video);
+
 
   function setLyrics() {
     var params = $('.parameters').data();

@@ -20,7 +20,11 @@
         </div>
       </div>
       <div class="col-md-6 text-center">
-        <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/<%= song.youtube_id %>" frameborder="0"></iframe>
+        <!-- <video> -->
+        <iframe webkit-playsinline class="video" width="560" height="315"
+           src="http://www.youtube.com/embed/<%= song.youtube_id %>?playsinline=1" frameborder="0"></iframe>
+        <!-- </video> -->
+        <!-- <button id="play-btn">Play Video</button> -->
         <h2 class="text-center">Score: <span class="score"></span> / <span class="total-questions"></span></h2>
       </div>
       <div class="col-md-6 text-center lyric-quiz">
