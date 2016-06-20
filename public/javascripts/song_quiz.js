@@ -1,4 +1,7 @@
 $(document).ready(function() {
+  var makeVideoPlayableInline = require('iphone-inline-video');
+  var video = $('video').get(0);
+  makeVideoPlayableInline(video);
 
   function setLyrics() {
     var params = $('.parameters').data();
