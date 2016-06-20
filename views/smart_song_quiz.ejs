@@ -5,8 +5,15 @@
     <% include partials/google_analytics %>
     <link rel='stylesheet' href='/stylesheets/<%= song.css %>.css' />
     <link rel='stylesheet' href='/stylesheets/navbar.css' />
+
+    <script src="/javascripts/mediaelement/build/mediaelement-and-player.min.js"></script>
+    <link rel="stylesheet" href="/javascripts/mediaelement/build/mediaelementplayer.css" />
+
+    <script
+     src="/javascripts/iphone-inline-video/dist/iphone-inline-video.browser.js"></script>
     <script type="text/javascript" src="/javascripts/song_quiz.js"></script>
-    <script src="/javascripts/iphone-inline-video/dist/iphone-inline-video.browser.js"></script>
+
+
   </head>
   <body>
     <% include partials/navbar %>
@@ -20,10 +27,11 @@
         </div>
       </div>
       <div class="col-md-6 text-center">
-        <!-- <video> -->
-        <iframe webkit-playsinline class="video" width="560" height="315"
-           src="http://www.youtube.com/embed/<%= song.youtube_id %>?playsinline=1" frameborder="0"></iframe>
-        <!-- </video> -->
+        <video width="560" height="315" id="video-player">
+
+        <iframe class="video" type="video/youtube" width="560" height="315"
+           src="https://www.youtube.com/embed/<%= song.youtube_id %>" frameborder="0" webkit-playsinline></iframe>
+        </video>
         <!-- <button id="play-btn">Play Video</button> -->
         <h2 class="text-center">Score: <span class="score"></span> / <span class="total-questions"></span></h2>
       </div>
