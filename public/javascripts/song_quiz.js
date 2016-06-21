@@ -1,6 +1,6 @@
 
 $(document).ready(function() {
-  var video = new MediaElementPlayer('#video-player');
+  var video = document.getElementById("test");
   makeVideoPlayableInline(video);
 
   function setLyrics() {
