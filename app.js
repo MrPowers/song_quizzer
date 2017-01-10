@@ -22,43 +22,13 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(favicon(path.join(__dirname,'public','images','favicon.ico')));
 
 app.use("/blog", require(path.join(__dirname, "controllers", "blogs_controller.js"))());
+app.use(require(path.join(__dirname, "controllers", "songs_controller.js"))());
 
 var appdata = require("./data/songs.json");
-var songCategories = require("./data/song_categories.json").categories;
 var _ = require("lodash");
 
-app.get('/', function(request, response) {
-  var data = songCategories.map(function(c) {
-    var songs = appdata.songs.filter( s =>
-      s.language === c.language && s.genre === c.genre && s.hot === c.hot
-    );
-    var shuffledSongs = _.shuffle(songs);
-    return {
-      all: _.chunk(shuffledSongs, 4),
-      category: c,
-      id: c.language + "-" + c.genre + "-" + c.hot
-    };
-  });
-  response.render('index', {
-    songData: data,
-    showLanguageFilter: true,
-    showDifficultyFilter: false
-  });
-});
-
-
+var appdata = require("./data/songs.json");
 var fs = require('fs');
-
-app.get('/:artist/:song', function(request, response) {
-  var foundSong = appdata.songs.find(s => s.name === request.params.song);
-  response.render('smart_song_quiz', {
-    song: foundSong,
-    showLanguageFilter: false,
-    showDifficultyFilter: true,
-    // HARDCODED
-    difficulty: "normal"
-  } );
-});
 
 app.get('/lyrics', function(request, response) {
   var song = appdata.songs.find(s => s.name === request.query.song);
