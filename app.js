@@ -1,3 +1,6 @@
+/*jslint node: true */
+"use strict";
+
 var express = require('express');
 var path = require('path');
 var favicon = require('serve-favicon');
@@ -23,9 +26,9 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(favicon(path.join(__dirname,'public','images','favicon.ico')));
 
-var appdata = require("./data/songs.json")
-var songCategories = require("./data/song_categories.json").categories
-var _ = require("lodash")
+var appdata = require("./data/songs.json");
+var songCategories = require("./data/song_categories.json").categories;
+var _ = require("lodash");
 
 app.get('/', function(request, response) {
   var data = songCategories.map(function(c) {
@@ -37,28 +40,28 @@ app.get('/', function(request, response) {
       all: _.chunk(shuffledSongs, 4),
       category: c,
       id: c.language + "-" + c.genre + "-" + c.hot
-    }
+    };
   });
   response.render('index', {
     songData: data,
     showLanguageFilter: true,
     showDifficultyFilter: false
   });
-})
+});
 
 app.get('/learn-spanish-music-television-movies', function(request, response) {
   response.render('learn_spanish', {
     showLanguageFilter: false,
     showDifficultyFilter: false
   });
-})
+});
 
 app.get('/language-tutor', function(request, response) {
   response.render('language_tutor', {
     showLanguageFilter: false,
     showDifficultyFilter: false
   });
-})
+});
 
 var fs = require('fs');
 var path = require('path');
@@ -72,7 +75,7 @@ app.get('/:artist/:song', function(request, response) {
     // HARDCODED
     difficulty: "normal"
   } );
-})
+});
 
 app.get('/lyrics', function(request, response) {
   var song = appdata.songs.find(s => s.name === request.query.song);
@@ -85,18 +88,26 @@ app.get('/lyrics', function(request, response) {
     hard: 2,
     insane: 1
   };
-  var linesPerBlank = difficultyToLines[request.query.difficulty]
+  var linesPerBlank = difficultyToLines[request.query.difficulty];
   var counter = _.random(1, linesPerBlank);
   var rows = data.map(function(row) {
-    if (row === '') {return ''};
+    if (row === '') {
+      return '';
+    }
     var words = row.split(" ");
-    if (words[0] === "SKIP") { return(words.slice(1, words.length).join(" ")) };
-    if (linesPerBlank == counter) {
+    if (words[0] === "SKIP") {
+      return(words.slice(1, words.length).join(" "));
+    }
+    if (linesPerBlank === counter) {
       counter = 1;
       var indexes = [];
-      words.forEach(function(w, i) { if(!w.startsWith("SKIP")) {return indexes.push(i)} });
+      words.forEach(function(w, i) {
+        if(!w.startsWith("SKIP")) { return indexes.push(i); }
+      });
       var i = _.sample(indexes);
-      if (indexes.length === 0) { return(words.join(" ")) };
+      if (indexes.length === 0) {
+        return(words.join(" "));
+      }
       var answer = words[i].replace(/[?.,\/#!$%\^&\*;:{}=\_`~()]/g,"");
       var inputSize = answer.length + _.random(1, 5);
       words[i] = '<input type="text" size="' + inputSize + '" data-answer="' + answer + '">';
@@ -109,7 +120,7 @@ app.get('/lyrics', function(request, response) {
 
   rows = rows.map(row => row.replace(/SKIP/g, ""));
   response.send(rows);
-})
+});
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
