@@ -22,58 +22,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(favicon(path.join(__dirname,'public','images','favicon.ico')));
 
 app.use("/blog", require(path.join(__dirname, "controllers", "blogs_controller.js"))());
-app.use(require(path.join(__dirname, "controllers", "songs_controller.js"))());
-
-var appdata = require("./data/songs.json");
-var _ = require("lodash");
-
-var appdata = require("./data/songs.json");
-var fs = require('fs');
-
-app.get('/lyrics', function(request, response) {
-  var song = appdata.songs.find(s => s.name === request.query.song);
-  var filePath = path.join(__dirname, 'song_data', song.name + '.txt');
-  var newline = require('os').EOL;
-  var data = fs.readFileSync(filePath).toString().split(newline);
-  var difficultyToLines = {
-    easy: 4,
-    normal: 3,
-    hard: 2,
-    insane: 1
-  };
-  var linesPerBlank = difficultyToLines[request.query.difficulty];
-  var counter = _.random(1, linesPerBlank);
-  var rows = data.map(function(row) {
-    if (row === '') {
-      return '';
-    }
-    var words = row.split(" ");
-    if (words[0] === "SKIP") {
-      return(words.slice(1, words.length).join(" "));
-    }
-    if (linesPerBlank === counter) {
-      counter = 1;
-      var indexes = [];
-      words.forEach(function(w, i) {
-        if(!w.startsWith("SKIP")) { return indexes.push(i); }
-      });
-      var i = _.sample(indexes);
-      if (indexes.length === 0) {
-        return(words.join(" "));
-      }
-      var answer = words[i].replace(/[?.,\/#!$%\^&\*;:{}=\_`~()]/g,"");
-      var inputSize = answer.length + _.random(1, 5);
-      words[i] = '<input type="text" size="' + inputSize + '" data-answer="' + answer + '">';
-      return(words.join(" "));
-    } else {
-      counter++;
-      return(row);
-    }
-  });
-
-  rows = rows.map(row => row.replace(/SKIP/g, ""));
-  response.send(rows);
-});
+app.use("/lyrics", require(path.join(__dirname, "controllers", "lyrics_controller.js"))());
+app.use("/", require(path.join(__dirname, "controllers", "songs_controller.js"))());
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
