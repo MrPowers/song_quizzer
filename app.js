@@ -21,6 +21,8 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(favicon(path.join(__dirname,'public','images','favicon.ico')));
 
+app.use("/blog", require(path.join(__dirname, "controllers", "blogs_controller.js"))());
+
 var appdata = require("./data/songs.json");
 var songCategories = require("./data/song_categories.json").categories;
 var _ = require("lodash");
@@ -44,19 +46,6 @@ app.get('/', function(request, response) {
   });
 });
 
-app.get('/learn-spanish-music-television-movies', function(request, response) {
-  response.render('learn_spanish', {
-    showLanguageFilter: false,
-    showDifficultyFilter: false
-  });
-});
-
-app.get('/language-tutor', function(request, response) {
-  response.render('language_tutor', {
-    showLanguageFilter: false,
-    showDifficultyFilter: false
-  });
-});
 
 var fs = require('fs');
 
