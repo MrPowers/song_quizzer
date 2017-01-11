@@ -29,8 +29,11 @@ module.exports = function() {
     });
   });
 
-  router.route('/:artist/:song').get(function(request, response) {
+  router.route('/:artist/:song').get(function(request, response, next) {
     const foundSong = appdata.songs.find(s => s.name === request.params.song);
+    if (!foundSong) {
+      next();
+    }
     response.render('smart_song_quiz', {
       song: foundSong,
       showLanguageFilter: false,
