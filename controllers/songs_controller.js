@@ -12,7 +12,7 @@ function chunkedSongs() {
     return {
       all: _.chunk(shuffledSongs, 4),
       category: c,
-      id: c.language + "-" + c.genre + "-" + c.hot
+      id: `${c.language}-${c.genre}-${c.hot}`
     };
   });
   return result;
