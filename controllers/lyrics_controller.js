@@ -1,3 +1,6 @@
+/*jslint node: true */
+"use strict";
+
 const Router = require("express").Router,
       appdata = require("../data/songs.json"),
       _ = require("lodash"),
